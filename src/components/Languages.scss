@@ -3,4 +3,9 @@
   border: 1px solid red;
   padding: 1em;
   width: 45%;
+  text-align: left;
+
+  li {
+    list-style: none;
+  }
 }

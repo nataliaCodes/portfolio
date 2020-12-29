@@ -3,10 +3,13 @@ import './Languages.scss';
 function Languages() {
   return (
     <div className="Languages">
-      <div>Image</div>
-      <h1>Natalia Martian</h1>
-      <h4>Full-stack developer</h4>
-      <div>Little row of icons</div>
+      <h1>Languages</h1>
+      <ul>
+        <li>EN</li>
+        <li>FR</li>
+        <li>RO</li>
+        <li>IT</li>
+      </ul>
     </div>
   );
 }
