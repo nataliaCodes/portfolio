@@ -1,13 +1,18 @@
+$body-color: #F6F8F2;
+$navbar-color: #CFDBD5;
+$text-color: red;
+$title-font: 'Alegreya Sans SC', sans-serif;
+$paragraph-font: 'Quicksand', sans-serif;
+
 .App {
   text-align: center;
-  background-color: #F6F8F2;
+  background-color: $body-color;
   width: 100vw;
-  height: 100vh;
   padding: 0px auto;
   margin: 0px auto;
 
-  font-family: 'Alegreya Sans SC', sans-serif;
-  font-family: 'Quicksand', sans-serif;
+  font-family: $title-font;
+  font-family: $paragraph-font;
 
   display: flex;
   flex-direction: column;
@@ -18,5 +23,11 @@
 .Information {
   display: flex;
   justify-content: space-evenly;
-  // padding: 1em;
+  color: $text-color;
+}
+
+h1 {
+  font-family: 'Alegreya Sans SC', sans-serif;
+  font-weight: 600;
+  margin: 0px auto;
 }

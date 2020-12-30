@@ -1,14 +1,16 @@
+@import './App.scss';
+
 .Navbar {
   display: flex;
   align-items: center;
   justify-content: center;
 
   width: 100vw;
-  background-color: #CFDBD5;
-  color: #2A2A28;
+  background-color: $navbar-color;
+  color: $text-color;
 
   :hover {
-    color: #F6F8F2;
+    color: $body-color;
   }
 
   .menu-icon {

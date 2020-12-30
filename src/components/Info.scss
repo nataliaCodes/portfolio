@@ -1,6 +1,8 @@
+@import './App.scss';
+
 .Info {
   background-color: #F8DB8C;
-  color: #2A2A28;
+  color: $text-color;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   width: 100vw;
   padding: 2em 0 2em 0;
@@ -11,10 +13,7 @@
   }
 
   h1 {
-    font-family: 'Alegreya Sans SC', sans-serif;
-    font-weight: 600;
-    margin: 0px auto;
-    padding-top: .5em;
+    padding-top: 1em;
   }
 
   h2 {

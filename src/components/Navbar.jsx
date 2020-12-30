@@ -1,6 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faBrain, faTerminal, faGraduationCap, faLaptop } from '@fortawesome/free-solid-svg-icons'
+import { faBrain, faTerminal, faGraduationCap, faLaptop } from '@fortawesome/free-solid-svg-icons';
 
 import Tooltip from "@material-ui/core/Tooltip";
 import Fade from '@material-ui/core/Fade';
