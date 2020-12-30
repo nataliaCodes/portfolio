@@ -7,105 +7,61 @@ import Fade from '@material-ui/core/Fade';
 
 import './Navbar.scss';
 
+import { withStyles } from '@material-ui/core/styles';
+
+const StyledTooltip = withStyles((theme) => ({
+  tooltip: {
+    color: 'rgba(246, 248, 242, 1)',
+    boxShadow: theme.shadows[1],
+    fontSize: '.9em',
+    marginTop: '-1.5em',
+    marginRight: '-1em'
+  },
+}))(Tooltip);
 
 function Navbar() {
   return (
     <div className="Navbar">
-      <Tooltip 
+      <StyledTooltip 
         TransitionComponent={Fade} 
         title="Contact" 
-        placement="top"
-        PopperProps={{
-          popperOptions: {
-            modifiers: {
-              offset: {
-                enabled: true,
-                offset: '10px, -35px',
-              },
-            },
-          },
-        }}
       >
         <div className="menu-icon">
           <FontAwesomeIcon className="envelope" icon={faEnvelope} />
         </div>
-      </Tooltip>
-      <Tooltip 
+      </StyledTooltip>
+      <StyledTooltip 
         TransitionComponent={Fade} 
         title="Skills" 
-        placement="top" 
-        PopperProps={{
-          popperOptions: {
-            modifiers: {
-              offset: {
-                enabled: true,
-                offset: '1px, -35px',
-              },
-            },
-          },
-        }}
       >
         <div className="menu-icon">
           <FontAwesomeIcon className="brain" icon={faBrain} />
         </div>
-      </Tooltip>
-      <Tooltip 
+      </StyledTooltip>
+      <StyledTooltip 
         TransitionComponent={Fade} 
         title="Projects" 
-        placement="top" 
-        PopperProps={{
-          popperOptions: {
-            modifiers: {
-              offset: {
-                enabled: true,
-                offset: '1px, -35px',
-              },
-            },
-          },
-        }}
       >
         <div className="menu-icon">
           <FontAwesomeIcon className="terminal" icon={faTerminal} />
         </div>
-      </Tooltip>
-      <Tooltip 
+      </StyledTooltip>
+      <StyledTooltip 
         TransitionComponent={Fade} 
         title="Education" 
-        placement="top" 
-        PopperProps={{
-          popperOptions: {
-            modifiers: {
-              offset: {
-                enabled: true,
-                offset: '1px, -35px',
-              },
-            },
-          },
-        }}
       >
         <div className="menu-icon">
           <FontAwesomeIcon className="cap" icon={faGraduationCap} />
         </div>
-      </Tooltip>
-      <Tooltip 
+      </StyledTooltip>
+      <StyledTooltip 
         TransitionComponent={Fade} 
         title="Experience" 
-        placement="top" 
-        PopperProps={{
-          popperOptions: {
-            modifiers: {
-              offset: {
-                enabled: true,
-                offset: '1px, -35px',
-              },
-            },
-          },
-        }}
       >
         <div className="menu-icon">
           <FontAwesomeIcon className="laptop" icon={faLaptop} />
         </div>
-      </Tooltip>
+      </StyledTooltip>
     </div>
   );
 }
