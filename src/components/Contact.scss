@@ -1,10 +1,36 @@
+@import './App.scss';
+
 .Contact {
-  // margin-right: 2em;
   border: 1px solid red;
-  // padding: 1em;
-  text-align: left;
+  text-align: center;
+  color: $text-color;
+  width: 45vw;
 
   span {
     font-weight: bold;
+    font-family: $title-font;
+    font-size: 1.1em;
   }
+
+  p {
+    font-size: 1.3em;
+  }
+}
+
+.contact-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  margin-top: -1em;
+  font-size: 1.3em;
+}
+
+h4 {
+  margin: 1.1em .5em 1.3em .5em;
+}
+
+.contact-icons {
+  font-size: 2em;
+  margin: -0.2em .5em .5em .5em;
 }

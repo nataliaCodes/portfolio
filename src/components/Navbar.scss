@@ -14,13 +14,13 @@
   }
 
   .menu-icon {
+    display: flex;
+    align-items: center;
+    
     height: 2.5em;
     width: 3.5em;
     margin: 0 2em 0 2em;
     padding: 2em 0 2em 0;
-
-    display: flex;
-    align-items: center;
   }
 
   .envelope {
