@@ -11,6 +11,7 @@ import Skills from './Skills';
 import Projects from './Projects';
 import Education from './Education';
 import Experience from './Experience';
+import Divider from './Divider';
 
 function App() {
   return (
@@ -18,13 +19,18 @@ function App() {
       <Navbar />
       <Info />
       <Summary />
+      <Divider />
       <div className="Information">
         <Contact />
         <Languages />
       </div>
+      <Divider />
       <Skills />
+      <Divider />
       <Projects />
+      <Divider />
       <Education />
+      <Divider />
       <Experience />
     </div>
   );

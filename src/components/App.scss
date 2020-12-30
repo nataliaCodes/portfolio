@@ -1,17 +1,18 @@
 .App {
   text-align: center;
   background-color: #F6F8F2;
-  height: 100vh;
+  width: 100vw;
+  padding: 0px auto;
+  margin: 0px auto;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
 .Information {
   display: flex;
   justify-content: space-evenly;
-  width: 95vw;
-  padding: 1em;
-  border-bottom: 2px solid #2A2A28;
+  // padding: 1em;
 }

@@ -1,6 +1,33 @@
 .Navbar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+
   background-color: #CFDBD5;
   color: #2A2A28;
-  width: 100%;
-  padding: 1em;
+  // padding: 1em;
+
+  :hover {
+    color: #F6F8F2;
+  }
+
+  .menu-icon {
+    height: 2.5em;
+    width: 3.5em;
+    // margin-left: 2em;
+    // margin-right: 2em;
+  }
+
+  .envelope {
+    height: 3.1rem;
+    width: 5rem;
+    padding: 0;
+  }
+
+  .cap {
+    height: 3.1rem;
+    width: 5rem;
+    padding: 0;
+  }
 }
