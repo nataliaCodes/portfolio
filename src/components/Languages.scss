@@ -2,10 +2,18 @@
 
 .Languages {
   border: 1px solid red;
-  width: 45vw;
-  text-align: center;
+  width: 35vw;
+  text-align: left;
+  
 
   li {
     list-style: none;
+    margin: .7em 0 .7em 0;
+  }
+
+  h1 {
+    font-size: 1.4em;
+    text-align: center;
+    margin: .7em 0 .7em 0;
   }
 }

@@ -5,10 +5,11 @@ import './Button.scss';
 
 const ThemedButton = withStyles((theme) => ({
   root: {
-    // color: '#2A2A28',
-    color: 'red',
+    color: '#2A2A28',
     fontSize: '.9em',
     fontFamily: 'Quicksand',
+    padding: '0 .4em 0 .4em',
+    fontWeight: '700',
     '&:hover': {
       backgroundColor: '#CFDBD5',
     },

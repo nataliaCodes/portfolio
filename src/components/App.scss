@@ -1,6 +1,6 @@
 $body-color: #F6F8F2;
 $navbar-color: #CFDBD5;
-$text-color: red;
+$text-color: #2A2A28;
 $title-font: 'Alegreya Sans SC', sans-serif;
 $paragraph-font: 'Quicksand', sans-serif;
 
@@ -20,7 +20,7 @@ $paragraph-font: 'Quicksand', sans-serif;
 .Information {
   display: flex;
   justify-content: space-between;
-  
+
   color: $text-color;
 }
 
