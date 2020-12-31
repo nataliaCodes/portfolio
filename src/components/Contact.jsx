@@ -9,9 +9,9 @@ function Contact() {
       <h2>Full-stack developer</h2>
       <p>Montreal, Canada</p>
       <div className="contact-buttons">
-        <StyledButton>Email me</StyledButton>
+        <StyledButton noColor={true}>Email me</StyledButton>
         <h4>or</h4>
-        <StyledButton>Call me</StyledButton>
+        <StyledButton noColor={true}>Call me</StyledButton>
       </div>
     </div>
   );
