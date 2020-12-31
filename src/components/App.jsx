@@ -5,7 +5,7 @@ import './App.scss';
 import Navbar from './Navbar';
 import Summary from './Summary';
 import Info from './Info';
-import Languages from './Languages';
+import SoftSkills from './SoftSkills';
 import Skills from './Skills';
 import Projects from './Projects';
 import Education from './Education';
@@ -19,9 +19,7 @@ function App() {
       <Info />
       <Summary />
       <Divider />
-      <div className="Information">
-        <Languages />
-      </div>
+      <SoftSkills />
       <Divider />
       <Skills />
       <Divider />

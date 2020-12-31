@@ -1,0 +1,14 @@
+@import './App.scss';
+
+.SoftSkills {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: $text-color;
+
+  .soft-skills {
+    width: 55vw;
+  }
+
+}
