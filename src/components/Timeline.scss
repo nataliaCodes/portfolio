@@ -1,0 +1,29 @@
+@import './App.scss';
+
+.Timeline {
+  // border: 2px solid blue;
+
+
+  aside {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+    
+    font-size: 1.5em;
+    text-align: left;
+    width: 10vw;
+    padding-top: .4em;;
+  }
+
+  h3 {
+    position: relative;
+    top: -1.1em;
+    // left: -0.4em;
+    font-size: .8em;
+  }
+
+  .chevron {
+    position: relative;
+    right: -0.75em;
+  }
+}
