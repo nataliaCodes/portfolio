@@ -10,7 +10,7 @@ function Education() {
       <div className="invisible-top"></div>
       <div className="education-content">
         <Timeline
-          year="2020"
+          year="2020&nbsp;&nbsp;&nbsp;&nbsp;"
         />
         <Details
           title="Web Development Bootcamp"
@@ -21,7 +21,7 @@ function Education() {
       </div>
       <div className="education-content">
         <Timeline
-          year="2020"
+          year="2020&nbsp;&nbsp;&nbsp;&nbsp;"
         />
         <Details
           title="Certified Tester Foundation Level"
@@ -32,7 +32,7 @@ function Education() {
       </div>
       <div className="education-content">
         <Timeline
-          year="2020"
+          year="2020&nbsp;&nbsp;&nbsp;&nbsp;"
         />
         <Details
           title="SQL Basics for Data Science"
@@ -43,7 +43,7 @@ function Education() {
       </div>
       <div className="education-content">
         <Timeline
-          year="2020"
+          year="2020&nbsp;&nbsp;&nbsp;&nbsp;"
         />
         <Details
           title="Learn JavaScript"
@@ -54,7 +54,7 @@ function Education() {
       </div>
       <div className="education-content">
         <Timeline
-          year="2019"
+          year="2019&nbsp;&nbsp;&nbsp;&nbsp;"
         />
         <Details
           title="Front End Fundamentals with JavaScript"
@@ -65,7 +65,7 @@ function Education() {
       </div>
       <div className="education-content">
         <Timeline
-          year="2013"
+          year="2013&nbsp;&nbsp;&nbsp;&nbsp;"
         />
         <Details
           title="Masters Degree, Audio-visual communications"
@@ -76,7 +76,7 @@ function Education() {
       </div>
       <div className="education-content">
         <Timeline
-          year="2009"
+          year="2009&nbsp;&nbsp;&nbsp;&nbsp;"
         />
         <Details
           title="Certified trainer"
@@ -88,7 +88,7 @@ function Education() {
       </div>
       <div className="education-content">
         <Timeline
-          year="2008"
+          year="2008&nbsp;&nbsp;&nbsp;&nbsp;"
         />
         <Details
           title="Bachelor of Journalism"

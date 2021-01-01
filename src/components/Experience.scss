@@ -3,4 +3,22 @@
 .Experience {
   text-align: center;
   color: $text-color;
+
+  .experience-content {
+    display: flex;
+  }
+
+  .invisible-top {
+    background-color: $body-color;
+    height: .8em;
+    position: relative;
+    bottom: -0.7em;
+  }
+
+  .invisible-bottom {
+    background-color: $body-color;
+    height: .8em;
+    position: relative;
+    bottom: 0.7em;
+  }
 }
