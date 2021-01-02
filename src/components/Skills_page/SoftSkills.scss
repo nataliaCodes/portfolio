@@ -1,4 +1,4 @@
-@import './App.scss';
+@import '../App.scss';
 
 .SoftSkills {
   display: flex;
@@ -21,7 +21,7 @@
   }
 
   .soft-skills-list {
-    font-size: 1.3em;
+    // font-size: 1.3em;
 
     span {
       font-weight: 700;

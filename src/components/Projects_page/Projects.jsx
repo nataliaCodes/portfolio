@@ -2,7 +2,7 @@ import './Projects.scss';
 
 function Projects() {
   return (
-    <div className="Projects">
+    <div id="projects" className="Projects">
       <h1>
         Stay tuned for my projects!
       </h1>

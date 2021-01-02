@@ -4,7 +4,7 @@ import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 import './Summary.scss';
 
-import StyledButton from './Button'
+import StyledButton from '../Shared/Button'
 
 function Summary() {
   return (

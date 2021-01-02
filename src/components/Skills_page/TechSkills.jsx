@@ -1,10 +1,10 @@
-import './Skills.scss';
+import './TechSkills.scss';
 
-import arrowSkills from '../images/arrow-skills.png'
+import arrowSkills from '../../images/arrow-skills.png'
 
 function Skills() {
   return (
-    <div className="Skills">
+    <div id="skills" className="Skills">
         <div className="skills-text">
           <h3>Languages</h3>
           <h2>JavaScript, SQL, HTML/CSS</h2>

@@ -1,25 +1,18 @@
-// import React, { Fragment } from 'react'
+import { Switch, Route, Link } from 'react-router-dom';
 
 import './App.scss';
 
-import Navbar from './Navbar';
-import Summary from './Summary';
-import Info from './Info';
-import SoftSkills from './SoftSkills';
-import Skills from './Skills';
-import Projects from './Projects';
-import Education from './Education';
-import Experience from './Experience';
-import Divider from './Divider';
+import Home from './Home_page/Home';
+import Skills from './Skills_page/Skills';
+import Projects from './Projects_page/Projects';
+import Education from './Education_page/Education';
+import Experience from './Experience_page/Experience';
+import Divider from './Shared/Divider';
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
-      <Info />
-      <Summary />
-      <Divider />
-      <SoftSkills />
+      <Home />
       <Divider />
       <Skills />
       <Divider />

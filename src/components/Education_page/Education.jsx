@@ -1,11 +1,11 @@
 import './Education.scss';
 
-import Timeline from './Timeline';
-import Details from './Details';
+import Timeline from '../Shared/Timeline';
+import Details from '../Shared/Details';
 
 function Education() {
   return (
-    <div className="Education">
+    <div id="education" className="Education">
       <h1>Education</h1>
       <div className="invisible-top"></div>
       <div className="education-content">

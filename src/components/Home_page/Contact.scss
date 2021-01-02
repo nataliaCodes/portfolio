@@ -1,4 +1,4 @@
-@import './App.scss';
+@import '../App.scss';
 
 .Contact {
   color: $text-color;
@@ -6,7 +6,7 @@
   text-align: right;
 
   p {
-    font-size: 1.4em;
+    // font-size: 1.4em;
     margin: .3em 0 .3em 0;
   }
 
@@ -20,14 +20,17 @@
   }
 }
 
-.contact-buttons {
+.contact-button {
   display: flex;
   align-items: center;
   justify-content: flex-end;
 
-  margin-right: -0.5em;
-  font-size: 1.3em;
+  margin-right: -0.3em;
+  // font-size: 1.3em;
   text-align: left;
   color: $text-color;
 }
 
+a {
+  color: $body-color;
+}

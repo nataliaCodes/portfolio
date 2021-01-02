@@ -1,4 +1,4 @@
-@import './App.scss';
+@import '../App.scss';
 
 .Info {
   display: flex;
@@ -21,10 +21,14 @@
     width: 200px;
     margin-bottom: 1.5em;
   }
+
+  a {
+    color: $text-color;
+  }
 }
 
 .contact-icons {
-  font-size: 2em;
+  // font-size: 2em;
   margin: -0.2em .5em 0 .5em;
 
   :hover {

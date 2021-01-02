@@ -1,4 +1,4 @@
-@import './App.scss';
+@import '../App.scss';
 
 .Timeline {
   // border: 2px solid blue;
@@ -9,7 +9,7 @@
     align-items: flex-start;
     justify-content: flex-end;
     
-    font-size: 1.5em;
+    // font-size: 1.5em;
     text-align: left;
     width: 15vw;
     padding-top: .4em;;
@@ -19,7 +19,7 @@
     position: relative;
     top: -1.1em;
     right: -1em;
-    font-size: .8em;
+    // font-size: .8em;
     text-align: left;
     width: 6em;
     // border: 2px solid green;

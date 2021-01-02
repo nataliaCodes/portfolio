@@ -1,4 +1,4 @@
-@import './App.scss';
+@import '../App.scss';
 
 .Details {
   text-align: left;
@@ -12,10 +12,6 @@
   }
 
 } 
-
-.Details > p {
-  font-size: 1.3em;
-}
 
 header {
   display: flex;

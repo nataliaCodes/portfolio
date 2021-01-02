@@ -17,12 +17,16 @@ const ThemedButton = withStyles((theme) => ({
 }))(Button);
 
 function StyledButton(props) {
+
+
+
   return (
     <ThemedButton
       className="Button"
       size="large"
       startIcon={props.icon}
       style={props.noColor ? {color: "#2A2A28"} : {color: "#DB4355"}}
+      onClick={props.onClick}
     >
       {props.children}
     </ThemedButton>

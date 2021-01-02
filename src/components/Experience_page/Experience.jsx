@@ -1,17 +1,17 @@
 import './Experience.scss';
 
-import Timeline from './Timeline';
-import Details from './Details';
+import Timeline from '../Shared/Timeline';
+import Details from '../Shared/Details';
 
-import Swiq from '../images/sweet-iq.png';
-import Lulu from '../images/lulu.png';
-import BR from '../images/BR.png';
-import telus from '../images/telus.jpg';
-import biblionet from '../images/biblionet.jpg';
+import Swiq from '../../images/sweet-iq.png';
+import Lulu from '../../images/lulu.png';
+import BR from '../../images/BR.png';
+import telus from '../../images/telus.jpg';
+import biblionet from '../../images/biblionet.jpg';
 
 function Experience() {
   return (
-    <div className="Experience">
+    <div id="experience" className="Experience">
       <h1>Experience</h1>
       <div className="invisible-top"></div>
       <div className="experience-content">
