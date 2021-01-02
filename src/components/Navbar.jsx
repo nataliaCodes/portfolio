@@ -1,6 +1,7 @@
+import { Link } from 'react-router-dom';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faEnvelope } from '@fortawesome/free-regular-svg-icons';
-import { faBrain, faTerminal, faGraduationCap, faLaptop } from '@fortawesome/free-solid-svg-icons';
+import { faHome, faBrain, faTerminal, faGraduationCap, faLaptop } from '@fortawesome/free-solid-svg-icons';
 
 import Tooltip from "@material-ui/core/Tooltip";
 import Fade from '@material-ui/core/Fade';
@@ -24,43 +25,53 @@ function Navbar() {
     <div className="Navbar">
       <StyledTooltip 
         TransitionComponent={Fade} 
-        title="Contact" 
+        title="Home" 
       >
-        <div className="menu-icon">
-          <FontAwesomeIcon className="envelope" icon={faEnvelope} />
-        </div>
+        <Link to="/resume">
+          <div className="menu-icon">
+            <FontAwesomeIcon className="home" icon={faHome} />
+          </div>
+        </Link>
       </StyledTooltip>
       <StyledTooltip 
         TransitionComponent={Fade} 
         title="Skills" 
       >
-        <div className="menu-icon">
-          <FontAwesomeIcon className="brain" icon={faBrain} />
-        </div>
+        <Link to="/skills">
+          <div className="menu-icon">
+            <FontAwesomeIcon className="brain" icon={faBrain} />
+          </div>
+        </Link>
       </StyledTooltip>
       <StyledTooltip 
         TransitionComponent={Fade} 
         title="Projects" 
       >
-        <div className="menu-icon">
-          <FontAwesomeIcon className="terminal" icon={faTerminal} />
-        </div>
+        <Link to="/projects">
+          <div className="menu-icon">
+            <FontAwesomeIcon className="terminal" icon={faTerminal} />
+          </div>
+        </Link>
       </StyledTooltip>
       <StyledTooltip 
         TransitionComponent={Fade} 
         title="Education" 
       >
-        <div className="menu-icon">
-          <FontAwesomeIcon className="cap" icon={faGraduationCap} />
-        </div>
+        <Link to="/education">
+          <div className="menu-icon">
+            <FontAwesomeIcon className="cap" icon={faGraduationCap} />
+          </div>
+        </Link>
       </StyledTooltip>
       <StyledTooltip 
         TransitionComponent={Fade} 
         title="Experience" 
       >
-        <div className="menu-icon">
-          <FontAwesomeIcon className="laptop" icon={faLaptop} />
-        </div>
+        <Link to="/experience">
+          <div className="menu-icon">
+            <FontAwesomeIcon className="laptop" icon={faLaptop} />
+          </div>
+        </Link>
       </StyledTooltip>
     </div>
   );

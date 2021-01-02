@@ -2,9 +2,9 @@ import './TechSkills.scss';
 
 import arrowSkills from '../../images/arrow-skills.png'
 
-function Skills() {
+function TechSkills() {
   return (
-    <div id="skills" className="Skills">
+    <div id="skills" className="TechSkills">
         <div className="skills-text">
           <h3>Languages</h3>
           <h2>JavaScript, SQL, HTML/CSS</h2>
@@ -20,4 +20,4 @@ function Skills() {
   );
 }
 
-export default Skills;
+export default TechSkills;

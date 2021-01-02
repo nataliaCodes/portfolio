@@ -1,27 +1,30 @@
-import { Switch, Route, Link } from 'react-router-dom';
+import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import './App.scss';
 
+import Navbar from './Navbar'
 import Home from './Home_page/Home';
 import Skills from './Skills_page/Skills';
 import Projects from './Projects_page/Projects';
 import Education from './Education_page/Education';
 import Experience from './Experience_page/Experience';
-import Divider from './Shared/Divider';
 
 function App() {
   return (
+    <BrowserRouter>
     <div className="App">
-      <Home />
-      <Divider />
-      <Skills />
-      <Divider />
-      <Projects />
-      <Divider />
-      <Education />
-      <Divider />
-      <Experience />
+      <header className="App-header">
+        <Navbar />
+      </header>
+      <Switch>
+        <Route exact path="/resume" component={Home} />
+        <Route path="/skills" component={Skills} />
+        <Route path="/projects" component={Projects} />
+        <Route path="/education" component={Education} />
+        <Route path="/experience" component={Experience} />
+      </Switch>
     </div>
+    </BrowserRouter>
   );
 }
 

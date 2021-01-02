@@ -1,4 +1,4 @@
-@import '../App.scss';
+@import './App.scss';
 
 .Navbar {
   display: flex;
@@ -23,7 +23,7 @@
     padding: 2em 0 2em 0;
   }
 
-  .envelope {
+  .home {
     height: 3rem;
     width: 5rem;
   }
@@ -44,7 +44,7 @@
   }
 
   .laptop {
-    height: 2.9rem;
+    height: 2.5rem;
     width: 3.3rem;
   }
 }
