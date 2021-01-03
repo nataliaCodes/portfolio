@@ -2,10 +2,7 @@
 
 .Navbar {
   display: flex;
-  align-items: center;
-  justify-content: center;
 
-  width: 100vw;
   background-color: $light-orange;
 
   :hover {
@@ -17,8 +14,8 @@
     align-items: center;
     
     color: $text-color;
-    margin: 0 1.5em 0 1.5em;
-    padding: 2em 0 2.5em 0;
+    //margin: 0 1.5em 0 1.5em;
+    //padding: 2em 0 2.5em 0;
     height: 3rem;
     width: 3.5rem;
   }

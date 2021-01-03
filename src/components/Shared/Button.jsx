@@ -8,7 +8,7 @@ const ThemedButton = withStyles((theme) => ({
     color: '#DB4355',
     fontSize: '1em',
     fontFamily: 'Quicksand',
-    padding: '0 .4em 0 .4em',
+    //padding: '0 .4em 0 .4em',
     fontWeight: '700',
     '&:hover': {
       backgroundColor: '#CFDBD5',

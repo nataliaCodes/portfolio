@@ -2,17 +2,14 @@
 
 .Info {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
 
   background-color: $dark-blue;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
-  width: 100vw;
 
   img {
     border-radius: 50%;
     width: 11em;
-    margin-bottom: 1.5em;
+    //margin-bottom: 1.5em;
   }
 }
 

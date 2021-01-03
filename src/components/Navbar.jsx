@@ -14,8 +14,8 @@ const StyledTooltip = withStyles((theme) => ({
     color: 'rgba(246, 248, 242, 1)',
     boxShadow: theme.shadows[1],
     fontSize: '.9em',
-    marginTop: '-1.9em',
-    marginRight: '-1em'
+    //marginTop: '-1.9em',
+    //marginRight: '-1em'
   },
 }))(Tooltip);
 

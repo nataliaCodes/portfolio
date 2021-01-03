@@ -3,13 +3,11 @@
 .Languages {
   display: flex;
   flex-direction: column;
-  align-items: flex-end;
 
   width: 50%;
 
   .lang-content {
     display: flex;
-    align-items: center;
 
     width: 90%;
 
@@ -23,7 +21,7 @@
         text-align: center;
         font-family: $title-font;
         font-weight: 700;
-        padding: .4em 0 .4em 0;
+        //padding: .4em 0 .4em 0;
       }
     }
   
@@ -34,7 +32,7 @@
 
     .lang-levels {
       text-align: left;
-      font-size: .69em;
+      //font-size: .69em;
       position: relative;
       right: -2em;
     }

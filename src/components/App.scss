@@ -15,38 +15,39 @@ $paragraph-font: 'Quicksand', sans-serif;
 
 .App {
   display: flex;
-  flex-direction: column;
-  align-items: center;
 
   font-family: $paragraph-font;
   color: $text-color;
   background-color: $body-color;
   text-align: center;
-  width: 100vw;
-  height: 100vh;
-  padding: 0px auto;
-  margin: 0px auto;
 
   /* Small screens */
   @media only screen and (max-width: 749px) {
   
-    .Navbar {
-      display: flex;
-      align-items: flex-start;
-      justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    
+    padding: 0 auto;
+    margin: 0 auto;
+    border: 2px solid purple;
 
-      width: 82.5em;
-      font-size: .5em;
-      padding-left: 11em;
+    .Navbar {
+      align-items: center;
+      justify-content: center;
+
+      width: 100%;
+      //font-size: .5em;
+      // //padding-left: 8em;
     }
   
     .Info {
-      display: flex;
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
-      width: 57em;
-      padding-bottom: 2em;
-      margin-left: -10.5em;
+      // //padding-bottom: 2em;
+      // //padding-left: .5em;
+      width: auto;
 
       .hide-on-mobile {
         display: none;
@@ -54,16 +55,17 @@ $paragraph-font: 'Quicksand', sans-serif;
 
       .hide-on-desktop {
         order: -1;
-        font-size: 2em;
-        padding-top: .5em;
+        //font-size: 2em;
+        // //padding-top: .5em;
       }
 
       img {
         order: 0;
+        //margin-left: 10.5em;
       }
 
       p {
-        font-size: 1.5em;
+        //font-size: 1.5em;
       }
 
       .Contact {
@@ -72,17 +74,92 @@ $paragraph-font: 'Quicksand', sans-serif;
         align-items: center;
         justify-content: center;
 
-        padding-top: 1.5em;
+        //padding-top: 1.5em;
 
         .Button {
-          font-size: 1.3em;
+          //font-size: 1.3em;
         }
       }
 
       .Social {
         order: 1;
-        font-size: 1.3em;
-        padding-top: .5em;
+        //font-size: 1.3em;
+        //padding-top: .5em;
+      }
+    }
+
+    .Summary {
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      article {
+        //margin-left: 2.7em;
+        //margin-bottom: 2em;
+      }
+    }
+  }
+
+  /* Tablet view */
+  @media only screen and (min-width: 750px) and (max-width: 1024px) {
+
+    flex-direction: column;
+    align-items: center;
+
+    //padding: 0 auto;
+    //margin: 0 auto;
+    border: 2px solid purple;
+
+    .Navbar {
+      width: 104em;
+      //font-size: .5em;
+      //padding-left: 24em;
+    }
+  
+    .Info {
+      flex-direction: column;
+      flex-wrap: wrap;
+
+      //padding-bottom: 2em;
+      //margin-left: -10.5em;
+
+      .hide-on-desktop {
+        display: none;
+      }
+
+      img {
+        order: -1;
+        //margin-left: 18em;
+        //margin-top: 2em;
+      }
+
+      p {
+        //font-size: 1.5em;
+      }
+
+      .Contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        order: 1;
+
+        text-align: right;
+        //margin-left: 10em;
+        //margin-top: -15em;
+        //margin-bottom: 3em;
+
+        .Button {
+          //font-size: 1.3em;
+        }
+      }
+
+      .Social {
+        order: 0;
+
+        //font-size: 1.3em;
+        //padding-top: .5em;
+        //margin-left: -21em;
       }
     }
 
@@ -93,20 +170,47 @@ $paragraph-font: 'Quicksand', sans-serif;
       justify-content: flex-start;
 
       article {
-        padding-bottom: 4em;
-        margin-left: 2.7em;
+        //padding-bottom: 4em;
+        //margin-left: 3em;
         width: 65%;
       }
     }
   }
 
-  /* Tablet view */
-  @media only screen and (min-width: 750px) and (max-width: 1024px) {
-
-  }
-
   /* Desktop view */
   @media only screen and (min-width: 1025px) {
+
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: flex-start;
+
+    border: 2px solid purple;
+
+
+    .Info {
+      flex-direction: column;
+
+      order: -1;
+
+      width: 20%;
+      border: 2px solid blue;
+    }
+
+    .Summary {
+      order: 0;
+
+      width: 50%;
+      border: 2px solid red;
+    }
+
+    .Navbar {
+      flex-direction: column;
+
+      order: 1;
+
+      width: 10%;
+      border: 2px solid green;
+    }
 
   }
 }
@@ -114,21 +218,21 @@ $paragraph-font: 'Quicksand', sans-serif;
 h1 {
   font-family: $title-font;
   font-weight: 600;
-  font-size: 1.8em;
+  //font-size: 1.8em;
 }
 
 h2 {
   font-weight: 600;
-  font-size: 1.5em;
+  //font-size: 1.5em;
 }
 
 h3 {
   font-weight: 600;
-  font-size: 1.2em;
+  //font-size: 1.2em;
 }
 
 p {
-  font-size: 1.3em;
+  //font-size: 1.3em;
 }
 
 a {

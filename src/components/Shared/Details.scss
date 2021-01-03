@@ -2,8 +2,7 @@
 
 .Details {
   text-align: left;
-  width: 75%;
-  padding-left: 1.5em;
+  //padding-left: 1.5em;
   border-left: 2px solid $text-color;
 
   span {
@@ -11,7 +10,7 @@
   }
 
   p {
-    margin-top: .3em;
+    //margin-top: .3em;
   }
 } 
 
@@ -22,8 +21,8 @@ header {
     width: 4.5em;
     height: 4em;
     border: 1px solid $text-color;
-    margin-right: .5em;
-    margin-top: .5em;
+    //margin-right: .5em;
+    //margin-top: .5em;
   }
 
   .job-info {
@@ -31,12 +30,12 @@ header {
     flex-direction: column;
 
     h1 {
-      margin-top: .3em;
+      //margin-top: .3em;
       width: 100%;
     }
 
     h3 {
-      margin-top: -0.9em;
+      //margin-top: -0.9em;
     }
   }
 }
