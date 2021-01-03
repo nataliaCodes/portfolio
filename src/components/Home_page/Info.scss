@@ -9,22 +9,10 @@
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   width: 100vw;
 
-  aside {
-    display: flex;
-    flex-direction: column;
-
-    padding: 2em 0 2em 0;
-
-    img {
-      border-radius: 50%;
-      width: 11em;
-      margin-bottom: 1.5em;
-    }
-
-    .contact-icons {
-      font-size: 2em;
-      margin: 0 .5em 0 .5em;
-    }
+  img {
+    border-radius: 50%;
+    width: 11em;
+    margin-bottom: 1.5em;
   }
 }
 

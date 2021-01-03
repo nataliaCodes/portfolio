@@ -23,8 +23,92 @@ $paragraph-font: 'Quicksand', sans-serif;
   background-color: $body-color;
   text-align: center;
   width: 100vw;
+  height: 100vh;
   padding: 0px auto;
   margin: 0px auto;
+
+  /* Small screens */
+  @media only screen and (max-width: 749px) {
+  
+    .Navbar {
+      display: flex;
+      align-items: flex-start;
+      justify-content: flex-start;
+
+      width: 82.5em;
+      font-size: .5em;
+      padding-left: 11em;
+    }
+  
+    .Info {
+      display: flex;
+      flex-direction: column;
+
+      width: 57em;
+      padding-bottom: 2em;
+      margin-left: -10.5em;
+
+      .hide-on-mobile {
+        display: none;
+      }
+
+      .hide-on-desktop {
+        order: -1;
+        font-size: 2em;
+        padding-top: .5em;
+      }
+
+      img {
+        order: 0;
+      }
+
+      p {
+        font-size: 1.5em;
+      }
+
+      .Contact {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        padding-top: 1.5em;
+
+        .Button {
+          font-size: 1.3em;
+        }
+      }
+
+      .Social {
+        order: 1;
+        font-size: 1.3em;
+        padding-top: .5em;
+      }
+    }
+
+    .Summary {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+
+      article {
+        padding-bottom: 4em;
+        margin-left: 2.7em;
+        width: 65%;
+      }
+    }
+  }
+
+  /* Tablet view */
+  @media only screen and (min-width: 750px) and (max-width: 1024px) {
+
+  }
+
+  /* Desktop view */
+  @media only screen and (min-width: 1025px) {
+
+  }
 }
 
 h1 {

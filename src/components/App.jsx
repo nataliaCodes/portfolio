@@ -13,9 +13,7 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <header className="App-header">
-        <Navbar />
-      </header>
+      <Navbar />
       <Switch>
         <Route exact path="/resume" component={Home} />
         <Route path="/skills" component={Skills} />

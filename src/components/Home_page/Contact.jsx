@@ -73,7 +73,7 @@ function Contact() {
 
   return (
     <div id="contact" className="Contact">
-      <h1>Natalia Martian</h1>
+      <h1 className="hide-on-mobile">Natalia Martian</h1>
       <h2>Full-stack developer</h2>
       <p>Montreal, Canada</p>
       <div className="contact-button">
