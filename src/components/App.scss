@@ -34,10 +34,6 @@ $paragraph-font: 'Quicksand', sans-serif;
     .Navbar {
       align-items: center;
       justify-content: center;
-
-      width: 100%;
-      //font-size: .5em;
-      // //padding-left: 8em;
     }
   
     .Info {
@@ -45,27 +41,16 @@ $paragraph-font: 'Quicksand', sans-serif;
       align-items: center;
       justify-content: center;
 
-      // //padding-bottom: 2em;
-      // //padding-left: .5em;
-      width: auto;
-
       .hide-on-mobile {
         display: none;
       }
 
       .hide-on-desktop {
         order: -1;
-        //font-size: 2em;
-        // //padding-top: .5em;
       }
 
       img {
         order: 0;
-        //margin-left: 10.5em;
-      }
-
-      p {
-        //font-size: 1.5em;
       }
 
       .Contact {
@@ -73,18 +58,10 @@ $paragraph-font: 'Quicksand', sans-serif;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-
-        //padding-top: 1.5em;
-
-        .Button {
-          //font-size: 1.3em;
-        }
       }
 
       .Social {
         order: 1;
-        //font-size: 1.3em;
-        //padding-top: .5em;
       }
     }
 
@@ -92,11 +69,6 @@ $paragraph-font: 'Quicksand', sans-serif;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
-      article {
-        //margin-left: 2.7em;
-        //margin-bottom: 2em;
-      }
     }
   }
 
@@ -106,22 +78,20 @@ $paragraph-font: 'Quicksand', sans-serif;
     flex-direction: column;
     align-items: center;
 
-    //padding: 0 auto;
-    //margin: 0 auto;
+    padding: 0 auto;
+    margin: 0 auto;
     border: 2px solid purple;
 
     .Navbar {
-      width: 104em;
-      //font-size: .5em;
-      //padding-left: 24em;
+      align-items: center;
+      justify-content: center;
     }
   
     .Info {
       flex-direction: column;
       flex-wrap: wrap;
-
-      //padding-bottom: 2em;
-      //margin-left: -10.5em;
+      align-items: center;
+      justify-content: center;
 
       .hide-on-desktop {
         display: none;
@@ -129,37 +99,21 @@ $paragraph-font: 'Quicksand', sans-serif;
 
       img {
         order: -1;
-        //margin-left: 18em;
-        //margin-top: 2em;
-      }
-
-      p {
-        //font-size: 1.5em;
       }
 
       .Contact {
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
 
         order: 1;
 
         text-align: right;
-        //margin-left: 10em;
-        //margin-top: -15em;
-        //margin-bottom: 3em;
-
-        .Button {
-          //font-size: 1.3em;
-        }
       }
 
       .Social {
         order: 0;
-
-        //font-size: 1.3em;
-        //padding-top: .5em;
-        //margin-left: -21em;
       }
     }
 
@@ -170,9 +124,8 @@ $paragraph-font: 'Quicksand', sans-serif;
       justify-content: flex-start;
 
       article {
-        //padding-bottom: 4em;
-        //margin-left: 3em;
-        width: 65%;
+        align-items: center;
+        justify-content: center;
       }
     }
   }
@@ -181,11 +134,8 @@ $paragraph-font: 'Quicksand', sans-serif;
   @media only screen and (min-width: 1025px) {
 
     flex-direction: row;
-    align-items: flex-start;
-    justify-content: flex-start;
 
     border: 2px solid purple;
-
 
     .Info {
       flex-direction: column;
