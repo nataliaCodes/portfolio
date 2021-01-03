@@ -6,32 +6,25 @@
   justify-content: space-evenly;
 
   background-color: $dark-blue;
-  color: $text-color;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
   width: 100vw;
-  padding: 1em 0 1em 0;
 
   aside {
     display: flex;
     flex-direction: column;
-  }
 
-  img {
-    border-radius: 50%;
-    width: 200px;
-    margin-bottom: 1.5em;
-  }
+    padding: 2em 0 2em 0;
 
-  a {
-    color: $text-color;
-  }
-}
+    img {
+      border-radius: 50%;
+      width: 11em;
+      margin-bottom: 1.5em;
+    }
 
-.contact-icons {
-  // font-size: 2em;
-  margin: -0.2em .5em 0 .5em;
-
-  :hover {
-    color: $body-color;
+    .contact-icons {
+      font-size: 2em;
+      margin: 0 .5em 0 .5em;
+    }
   }
 }
+

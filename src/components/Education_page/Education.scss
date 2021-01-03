@@ -1,24 +1,30 @@
 @import '../App.scss';
 
 .Education {
-  text-align: center;
-  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  
+  width: 90%;
 
   .education-content {
     display: flex;
+    
+    width: 100%;
   }
-
+  
   .invisible-top {
     background-color: $body-color;
-    height: .8em;
+    height: 1.2em;
+    width: 2em;
     position: relative;
-    bottom: -0.7em;
+    bottom: -1.2em;
+    right: -7em;
   }
-
+  
   .invisible-bottom {
     background-color: $body-color;
-    height: .8em;
+    height: 1em;
     position: relative;
-    bottom: 0.7em;
+    bottom: 1em;
   }
 }

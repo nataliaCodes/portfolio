@@ -16,7 +16,8 @@ function Experience() {
       <div className="invisible-top"></div>
       <div className="experience-content">
         <Timeline
-          year="Apr 2017 ➼ Jan 2020"
+          year="Apr 2017"
+          year2="Jan 2020"
         />
         <Details
           img={Swiq}
@@ -29,7 +30,8 @@ function Experience() {
       </div>
       <div className="experience-content">
         <Timeline
-          year="Aug 2016 ➼ Mar 2017"
+          year="Aug 2016"
+          year2="Mar 2017"
         />
         <Details
           img={Lulu}
@@ -43,7 +45,8 @@ function Experience() {
       </div>
       <div className="experience-content">
         <Timeline
-          year="Jun 2015 ➼ Jun 2016"
+          year="Jun 2015"
+          year2="Jun 2016"
         />
         <Details
           img={BR}
@@ -56,7 +59,8 @@ function Experience() {
       </div>
       <div className="experience-content">
         <Timeline
-          year="Oct 2014 ➼ Jul 2015"
+          year="Oct 2014"
+          year2="Jul 2015"
         />
         <Details
           img={telus}
@@ -70,7 +74,8 @@ function Experience() {
       </div>
       <div className="experience-content">
         <Timeline
-          year="Mar 2009 ➼ Feb 2014"
+          year="Mar 2009"
+          year2="Feb 2014"
         />
         <Details
           img={biblionet}

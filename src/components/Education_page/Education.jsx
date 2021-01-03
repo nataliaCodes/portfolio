@@ -11,6 +11,7 @@ function Education() {
       <div className="education-content">
         <Timeline
           year="2020"
+          year2="2021"
         />
         <Details
           title="Web Development Bootcamp"

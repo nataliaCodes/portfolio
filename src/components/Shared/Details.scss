@@ -2,43 +2,41 @@
 
 .Details {
   text-align: left;
-  width: 74vw;
+  width: 75%;
   padding-left: 1.5em;
   border-left: 2px solid $text-color;
-  // border: 2px solid red;
 
   span {
     font-weight: 700;
   }
 
+  p {
+    margin-top: .3em;
+  }
 } 
 
 header {
   display: flex;
 
   img {
-    width: 5em;
-    height: 4.55em;
+    width: 4.5em;
+    height: 4em;
     border: 1px solid $text-color;
+    margin-right: .5em;
+    margin-top: .5em;
   }
 
   .job-info {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 
     h1 {
-      margin-top: .1em;
+      margin-top: .3em;
       width: 100%;
-      padding-left: .3em;
     }
 
     h3 {
-      margin-top: -0.1em;
-      padding-left: .5em;
-    }
-  
-    a {
-      color: $text-color;
+      margin-top: -0.9em;
     }
   }
 }

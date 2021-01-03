@@ -19,6 +19,7 @@ $paragraph-font: 'Quicksand', sans-serif;
   align-items: center;
 
   font-family: $paragraph-font;
+  color: $text-color;
   background-color: $body-color;
   text-align: center;
   width: 100vw;
@@ -44,4 +45,12 @@ h3 {
 
 p {
   font-size: 1.3em;
+}
+
+a {
+  color: $text-color;
+
+  :hover {
+    color: $body-color;
+  }
 }

@@ -1,5 +1,7 @@
+import { Fragment } from 'react';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faChevronCircleRight } from '@fortawesome/free-solid-svg-icons';
+import { faChevronCircleRight, faSortDown } from '@fortawesome/free-solid-svg-icons';
 
 import './Timeline.scss';
 
@@ -8,8 +10,14 @@ function Timeline(props) {
     <div className="Timeline">
       <aside>
         <h3>{props.year}</h3>
-        <FontAwesomeIcon className="chevron" icon={faChevronCircleRight} />
+        {props.year2 && 
+        <>
+          <FontAwesomeIcon className="down-arrow" icon={faSortDown}></FontAwesomeIcon>
+          <h3 className="year2">{props.year2}</h3>
+        </>
+        }
       </aside>
+      <FontAwesomeIcon className="chevron" icon={faChevronCircleRight} />
     </div>
   );
 }

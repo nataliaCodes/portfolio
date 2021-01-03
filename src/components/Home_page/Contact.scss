@@ -1,17 +1,14 @@
 @import '../App.scss';
 
 .Contact {
-  color: $text-color;
-  width: 65vw;
   text-align: right;
+  margin-top: -1.5em;
 
   p {
-    // font-size: 1.4em;
     margin: .3em 0 .3em 0;
   }
 
   h2 {
-    font-weight: 600;
     margin: .3em 0 .3em 0;
   }
 
@@ -26,11 +23,10 @@
   justify-content: flex-end;
 
   margin-right: -0.3em;
-  // font-size: 1.3em;
   text-align: left;
-  color: $text-color;
 }
 
-a {
-  color: $body-color;
+.menu-title {
+  text-align: center;
+  font-weight: 350;
 }

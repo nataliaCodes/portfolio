@@ -6,7 +6,7 @@ import './Button.scss';
 const ThemedButton = withStyles((theme) => ({
   root: {
     color: '#DB4355',
-    fontSize: '.9em',
+    fontSize: '1em',
     fontFamily: 'Quicksand',
     padding: '0 .4em 0 .4em',
     fontWeight: '700',

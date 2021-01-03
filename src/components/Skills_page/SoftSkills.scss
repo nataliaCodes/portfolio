@@ -4,13 +4,12 @@
   display: flex;
   justify-content: center;
 
-  color: $text-color;
   text-align: left;
-  margin-left: .5em;
-  // border: 2px solid red;
+  width: 90vw;
+  padding: 1em 0 1em 0;
 
   .soft-skills {
-    width: 50vw;
+    width: 40%;
   }
 
   h1 {
@@ -22,7 +21,8 @@
   }
 
   .soft-skills-list {
-    // font-size: 1.3em;
+
+    font-size: 1.1em;
 
     span {
       font-weight: 700;

@@ -3,24 +3,24 @@ import { Link } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faBrain, faTerminal, faGraduationCap, faLaptop } from '@fortawesome/free-solid-svg-icons';
 
+import { withStyles } from '@material-ui/core/styles';
 import Tooltip from "@material-ui/core/Tooltip";
 import Fade from '@material-ui/core/Fade';
 
 import './Navbar.scss';
-
-import { withStyles } from '@material-ui/core/styles';
 
 const StyledTooltip = withStyles((theme) => ({
   tooltip: {
     color: 'rgba(246, 248, 242, 1)',
     boxShadow: theme.shadows[1],
     fontSize: '.9em',
-    marginTop: '-1.5em',
+    marginTop: '-1.9em',
     marginRight: '-1em'
   },
 }))(Tooltip);
 
 function Navbar() {
+
   return (
     <div className="Navbar">
       <StyledTooltip 

@@ -35,7 +35,6 @@ const StyledMenu = withStyles({
 const StyledMenuItem = withStyles((theme) => ({
   root: {
     '&:focus': {
-      border: '1px solid #F6F8F2',
       '& .MuiListItemIcon-root, & .MuiListItemText-primary': {
         color: '#F6F8F2',
       },
@@ -46,6 +45,7 @@ const StyledMenuItem = withStyles((theme) => ({
 function Contact() {
 
   const [anchorEl, setAnchorEl] = useState(null);
+  const [clicked, setClicked] = useState(false);
 
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
@@ -61,7 +61,11 @@ function Contact() {
     return new Promise((resolve, reject) => {
       navigator.clipboard
         .writeText([data])
-        .then(() => console.log('copied to clipboard!'))
+        .then(() => {
+          console.log('copied to clipboard!');
+          setClicked(true);
+          setTimeout(() => {setClicked(false)}, 3000)
+        })
         .catch(err => console.log(err))
     });
 
@@ -85,12 +89,15 @@ function Contact() {
           open={Boolean(anchorEl)}
           onClose={handleClose}
         >
-          <StyledMenuItem onClick={() => {handleItemClick("email")}}>
+          <div className="menu-title">Click to copy item:</div>
+          <StyledMenuItem
+            onClick={() => { handleItemClick("email") }}>
             <ListItemText primary="natalia.martian@gmail.com" />
           </StyledMenuItem>
-          <StyledMenuItem onClick={handleItemClick}>
+          <StyledMenuItem onClick={() => { handleItemClick() }}>
             <ListItemText primary="514.619.4568" />
           </StyledMenuItem>
+          {clicked && <div className="menu-title">Item copied to clipboard!</div>}
         </StyledMenu>
       </div>
     </div>
