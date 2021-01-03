@@ -29,11 +29,14 @@ $paragraph-font: 'Quicksand', sans-serif;
     
     padding: 0 auto;
     margin: 0 auto;
-    border: 2px solid purple;
+    width: 100%;
 
     .Navbar {
       align-items: center;
       justify-content: center;
+
+      width: 100%;
+      padding: 1.5em 0 1.5em 0;
     }
   
     .Info {
@@ -47,6 +50,7 @@ $paragraph-font: 'Quicksand', sans-serif;
 
       .hide-on-desktop {
         order: -1;
+        font-size: 2.5em;
       }
 
       img {
@@ -58,10 +62,26 @@ $paragraph-font: 'Quicksand', sans-serif;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+
+        p {
+          margin-top: -0.7em;
+        }
+
+        .contact-button {
+          margin-top: -0.9em;
+          font-size: 1.2em;
+        }
       }
 
       .Social {
         order: 1;
+
+        font-size: 2em;
+        padding: .4em 0 .7em 0;
+
+        a {
+          padding: 0 .4em 0 .4em;
+        }
       }
     }
 
@@ -69,6 +89,10 @@ $paragraph-font: 'Quicksand', sans-serif;
       flex-direction: column;
       align-items: center;
       justify-content: center;
+
+      article {
+        padding: 0 3em 2em 3em;
+      }
     }
   }
 
@@ -80,18 +104,23 @@ $paragraph-font: 'Quicksand', sans-serif;
 
     padding: 0 auto;
     margin: 0 auto;
-    border: 2px solid purple;
 
     .Navbar {
       align-items: center;
       justify-content: center;
+
+      width: 100%;
+      padding: 1.5em 0 1.5em 0;
     }
   
     .Info {
       flex-direction: column;
       flex-wrap: wrap;
       align-items: center;
-      justify-content: center;
+      justify-content: space-evenly;
+
+      padding: 3em 0 3em 0;
+      height: 15em;
 
       .hide-on-desktop {
         display: none;
@@ -104,28 +133,43 @@ $paragraph-font: 'Quicksand', sans-serif;
       .Contact {
         display: flex;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
 
         order: 1;
+        justify-self: center;
 
         text-align: right;
+
+        h1 {
+          font-size: 2em;
+          margin-bottom: -0.1em;
+        }
+
+        h2 {
+          margin-bottom: -0.6em;
+        }
+
+        .contact-button {
+          align-self: flex-end;
+
+          font-size: 1.2em;
+          margin-right: -0.5em;
+        }
       }
 
       .Social {
         order: 0;
+        font-size: 2em;
+
+        a {
+          padding: 0 .7em 0 .7em;
+        }
       }
     }
 
     .Summary {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
 
       article {
-        align-items: center;
-        justify-content: center;
+        padding: 0 4em 3em 4em;
       }
     }
   }
@@ -137,30 +181,35 @@ $paragraph-font: 'Quicksand', sans-serif;
 
     border: 2px solid purple;
 
+    .Navbar {
+      flex-direction: column;
+
+      order: 1;
+
+      width: 25%;
+      border: 2px solid green;
+    }
+
+    .Home {
+      display: flex;
+    }
+
     .Info {
       flex-direction: column;
 
       order: -1;
 
-      width: 20%;
+      width: 30%;
       border: 2px solid blue;
     }
 
     .Summary {
       order: 0;
 
-      width: 50%;
+      width: 75%;
       border: 2px solid red;
     }
 
-    .Navbar {
-      flex-direction: column;
-
-      order: 1;
-
-      width: 10%;
-      border: 2px solid green;
-    }
 
   }
 }
@@ -168,21 +217,21 @@ $paragraph-font: 'Quicksand', sans-serif;
 h1 {
   font-family: $title-font;
   font-weight: 600;
-  //font-size: 1.8em;
+  font-size: 1.8em;
 }
 
 h2 {
   font-weight: 600;
-  //font-size: 1.5em;
+  font-size: 1.5em;
 }
 
 h3 {
   font-weight: 600;
-  //font-size: 1.2em;
+  font-size: 1.2em;
 }
 
 p {
-  //font-size: 1.3em;
+  font-size: 1.3em;
 }
 
 a {

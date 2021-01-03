@@ -13,35 +13,37 @@
     display: flex;
     align-items: center;
     
-    color: $text-color;
-    //margin: 0 1.5em 0 1.5em;
-    //padding: 2em 0 2.5em 0;
     height: 3rem;
-    width: 3.5rem;
+    width: 5.5rem;
   }
 
   .home {
     height: 2.5rem;
     width: 3.5rem;
+    padding-left: .5em;
   }
 
   .brain {
     height: 2.3rem;
     width: 3.5rem;
+    padding-left: .5em;
   }
 
   .terminal {
     height: 2.1rem;
     width: 3.5rem;
+    padding-left: .5em;
   }
 
   .cap {
     height: 3rem;
     width: 3.5rem;
+    padding-left: .5em;
   }
 
   .laptop {
     height: 2.3rem;
     width: 3.5rem;
+    padding-left: .5em;
   }
 }
