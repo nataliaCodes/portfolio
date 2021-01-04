@@ -25,7 +25,7 @@ function StyledButton(props) {
       className="Button"
       size="large"
       startIcon={props.icon}
-      style={props.noColor ? {color: "#2A2A28"} : {color: "#DB4355"}}
+      style={props.noColor ? {color: "#2A2A28"} : {color: "#F24A56"}}
       onClick={props.onClick}
     >
       {props.children}

@@ -8,6 +8,13 @@ $light-red: #F24A56;
 $dark-red: #DB4355;
 $light-green: #44C3D0;
 $dark-green: #41B0AF;
+// 🤪 
+
+$desktop-yellow: #F4DBA4;
+$desktop-blue: #B0E3F1;
+$desktop-red: #F995B0;
+$desktop-purple: #BEBAD6;
+
 
 
 $title-font: 'Alegreya Sans SC', sans-serif;
@@ -93,17 +100,22 @@ $paragraph-font: 'Quicksand', sans-serif;
       article {
         padding: 0 3em 2em 3em;
       }
+
+      #pdfviewer {
+        display: none;
+      }
     }
   }
 
   /* Tablet view */
-  @media only screen and (min-width: 750px) and (max-width: 1024px) {
+  @media only screen and (min-width: 750px) and (max-width: 1023px) {
 
     flex-direction: column;
     align-items: center;
 
     padding: 0 auto;
     margin: 0 auto;
+    height: 100vh;
 
     .Navbar {
       align-items: center;
@@ -171,46 +183,178 @@ $paragraph-font: 'Quicksand', sans-serif;
       article {
         padding: 0 4em 3em 4em;
       }
+
+      #pdfviewer {
+        display: none;
+      }
     }
   }
 
   /* Desktop view */
-  @media only screen and (min-width: 1025px) {
+  @media only screen and (min-width: 1024px) {
 
     flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
 
-    border: 2px solid purple;
+    padding-top: 3em;
+    background: url(../images/geometric2.png) center center;
+    height: 200vh;
 
     .Navbar {
       flex-direction: column;
+      align-items: flex-start;
 
       order: 1;
 
-      width: 25%;
-      border: 2px solid green;
+      width: 5%;
+      margin-left: 1em;
+      padding: 0;
+      background-color: white;
+
+      .menu-icon {
+        color: $text-color;
+        padding-top: 1em;
+        width: 3rem;
+
+        .home {
+          height: 1.7rem;
+          width: 2rem;
+          padding-left: .5em;
+        }
+      
+        .brain {
+          height: 1.5rem;
+          width: 2rem;
+          padding-left: .5em;
+        }
+      
+        .terminal {
+          height: 1.5rem;
+          width: 2rem;
+          padding-left: .5em;
+        }
+      
+        .cap {
+          height: 1.5rem;
+          width: 2rem;
+          padding-left: .5em;
+        }
+      
+        .laptop {
+          height: 1.5rem;
+          width: 2rem;
+          padding-left: .5em;
+        }
+
+        :hover {
+          color: $dark-orange;
+        }
+      }
     }
 
     .Home {
       display: flex;
+
+      width: 85%;
     }
 
     .Info {
       flex-direction: column;
+      align-items: center;
+      justify-content: center;
 
       order: -1;
 
-      width: 30%;
-      border: 2px solid blue;
+      margin-top: 1.5em;
+      margin-right: 1.5em;
+      width: 25%;
+      height: 40%;
+      background-color: transparent;
+      border: 1px solid $desktop-blue;
+      box-shadow: 1px 1px 3px $light-blue;
+      background-image: none;
+
+      .hide-on-desktop {
+        display: none;
+      }
+
+      img {
+
+        order: -1;
+
+        width: 7em;
+        padding: 2em 0 2em 0;
+      }
+
+      .Contact {
+
+        order: 0;
+
+        background-color: white;
+        text-align: center;
+        padding: 0 .7em 0 .7em;
+
+        h1 {
+          font-size: 1.6em;
+        }
+
+        h2 {
+          font-size: 1.2em;
+          font-weight: 400;
+          margin-top: -0.8em;
+        }
+
+        p {
+          font-size: 1em;
+          margin: -0.8em 0 -0.05em 0;
+        }
+
+        .contact-button {
+          align-self: center;
+
+          font-size: 1em;
+          margin-left: .2em;
+        }
+      }
+
+      .Social {
+
+        order: 1;
+
+        font-size: 1.4em;
+        padding-bottom: 1.5em;
+
+        a {
+          padding: 0 .5em 0 .5em;
+        }
+      }
     }
 
     .Summary {
+      justify-content: center;
+
       order: 0;
 
-      width: 75%;
-      border: 2px solid red;
+      height: 117em;
+      border: 1px solid $desktop-red;
+      box-shadow: 1px 1px 3px $light-red;
+      width: 80%;
+      background-color: white;
+
+      h1 {
+        padding-top: 1em;
+      }
+
+      article {
+        width: 90%;
+      }
+
+      h3 {
+        margin-top: 1em;
+        margin-bottom: .5em;
+      }
     }
-
-
   }
 }
 

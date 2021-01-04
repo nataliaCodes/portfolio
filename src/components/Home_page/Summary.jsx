@@ -1,14 +1,19 @@
 import { Link } from 'react-router-dom';
 
+import Viewer, { Worker } from '@phuocng/react-pdf-viewer';
+import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
+
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
 import { faDownload } from '@fortawesome/free-solid-svg-icons';
 
 import './Summary.scss';
 
-import StyledButton from '../Shared/Button'
+import StyledButton from '../Shared/Button';
+import file from '../../files/Natalia.Martian.resume.pdf';
 
 function Summary() {
+
   return (
     <div className="Summary">
       <article>
@@ -19,8 +24,22 @@ function Summary() {
           <StyledButton icon={<FontAwesomeIcon icon={faDownload} />}>Download my CV</StyledButton>
         </Link>
       </article>
-      
-
+      <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.5.207/build/pdf.worker.min.js">
+        <div id="pdfviewer">
+            <div
+              style={{
+                overflow: 'hidden',
+                height: '87em',
+                border: '.5px solid gray',
+              }}
+            >
+              <Viewer
+                fileUrl={file}
+                defaultScale="1.0"
+              />
+            </div>
+        </div>
+      </Worker>
     </div>
   );
 }

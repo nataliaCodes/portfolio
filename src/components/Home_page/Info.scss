@@ -3,13 +3,12 @@
 .Info {
   display: flex;
 
-  background-color: $dark-blue;
+  background-color: $light-blue;
   background-image: url("https://www.transparenttextures.com/patterns/arches.png");
 
   img {
     border-radius: 50%;
     width: 11em;
-    //margin-bottom: 1.5em;
   }
 }
 
