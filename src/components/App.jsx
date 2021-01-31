@@ -14,14 +14,14 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Navbar />
-      <Home />
-      {/* <Switch>
+      {/* <Home /> */}
+      <Switch>
         <Route exact path="/resume" component={Home} />
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
         <Route path="/education" component={Education} />
         <Route path="/experience" component={Experience} />
-      </Switch> */}
+      </Switch>
     </div>
     </BrowserRouter>
   );
