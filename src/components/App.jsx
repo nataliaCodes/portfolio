@@ -2,7 +2,8 @@ import { BrowserRouter, Switch, Route } from 'react-router-dom';
 
 import './App.scss';
 
-import Navbar from './Navbar'
+import Navbar from './Navbar/Navbar';
+import Info from './Sidebar/Info';
 import Home from './Home_page/Home';
 import Skills from './Skills_page/Skills';
 import Projects from './Projects_page/Projects';
@@ -14,7 +15,7 @@ function App() {
     <BrowserRouter>
     <div className="App">
       <Navbar />
-      {/* <Home /> */}
+      <Info />
       <Switch>
         <Route exact path="/resume" component={Home} />
         <Route path="/skills" component={Skills} />

@@ -8,8 +8,8 @@ $light-red: #F24A56;
 $dark-red: #DB4355;
 $light-green: #44C3D0;
 $dark-green: #41B0AF;
-// 🤪 
 
+//desktop colors
 $desktop-yellow: #F4DBA4;
 $desktop-blue: #B0E3F1;
 $desktop-red: #F995B0;
@@ -328,6 +328,10 @@ $paragraph-font: 'Quicksand', sans-serif;
         a {
           padding: 0 .5em 0 .5em;
         }
+
+        :hover {
+          color: $dark-orange;
+        }
       }
     }
 
@@ -354,6 +358,18 @@ $paragraph-font: 'Quicksand', sans-serif;
         margin-top: 1em;
         margin-bottom: .5em;
       }
+    }
+
+    .Skills {
+      justify-content: center;
+
+      order: 0;
+
+      height: 117em;
+      border: 1px solid $desktop-blue;
+      box-shadow: 1px 1px 3px $light-blue;
+      width: 80%;
+      background-color: white;
     }
   }
 }

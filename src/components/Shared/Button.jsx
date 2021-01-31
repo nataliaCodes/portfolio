@@ -1,4 +1,4 @@
-import {Button} from '@material-ui/core';
+import { Button } from '@material-ui/core';
 import { withStyles } from '@material-ui/core/styles';
 
 import './Button.scss';
@@ -8,10 +8,10 @@ const ThemedButton = withStyles((theme) => ({
     color: '#DB4355',
     fontSize: '1em',
     fontFamily: 'Quicksand',
-    //padding: '0 .4em 0 .4em',
+    padding: '0 .4em 0 .4em',
     fontWeight: '700',
     '&:hover': {
-      backgroundColor: '#CFDBD5',
+      backgroundColor: '#F4DBA4',
     },
   },
 }))(Button);
