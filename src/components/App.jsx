@@ -4,7 +4,7 @@ import './App.scss';
 
 import Navbar from './Navbar/Navbar';
 import Info from './Sidebar/Info';
-import Home from './Home_page/Home';
+import Summary from './Home_page/Summary';
 import Skills from './Skills_page/Skills';
 import Projects from './Projects_page/Projects';
 import Education from './Education_page/Education';
@@ -17,7 +17,7 @@ function App() {
       <Navbar />
       <Info />
       <Switch>
-        <Route exact path="/resume" component={Home} />
+        <Route exact path="/resume" component={Summary} />
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
         <Route path="/education" component={Education} />

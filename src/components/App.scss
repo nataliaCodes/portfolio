@@ -199,7 +199,6 @@ $paragraph-font: 'Quicksand', sans-serif;
 
     padding-top: 3em;
     background: url(../images/geometric2.png) center center;
-    height: 200vh;
 
     .Navbar {
       flex-direction: column;
@@ -207,10 +206,11 @@ $paragraph-font: 'Quicksand', sans-serif;
 
       order: 1;
 
-      width: 5%;
-      margin-left: 1em;
+      margin-left: .5em;
+      height: 21em;
       padding: 0;
       background-color: white;
+      // border: 2px solid red;
 
       .menu-icon {
         color: $text-color;
@@ -253,12 +253,6 @@ $paragraph-font: 'Quicksand', sans-serif;
       }
     }
 
-    .Home {
-      display: flex;
-
-      width: 85%;
-    }
-
     .Info {
       flex-direction: column;
       align-items: center;
@@ -267,12 +261,12 @@ $paragraph-font: 'Quicksand', sans-serif;
       order: -1;
 
       margin-top: 1.5em;
-      margin-right: 1.5em;
-      width: 25%;
-      height: 40%;
+      margin-right: 2em;
+      width: 15em;
+      height: 25em;
       background-color: transparent;
-      border: 1px solid $desktop-blue;
-      box-shadow: 1px 1px 3px $light-blue;
+      border: 1px solid $desktop-purple;
+      box-shadow: 1px 1px 3px $desktop-red;
       background-image: none;
 
       .hide-on-desktop {
@@ -340,10 +334,10 @@ $paragraph-font: 'Quicksand', sans-serif;
 
       order: 0;
 
-      height: 117em;
-      border: 1px solid $desktop-red;
-      box-shadow: 1px 1px 3px $light-red;
-      width: 80%;
+      height: 115em;
+      border: 1px solid $dark-orange;
+      box-shadow: 1px 1px 3px $light-orange;
+      width: 75%;
       background-color: white;
 
       h1 {
@@ -363,12 +357,40 @@ $paragraph-font: 'Quicksand', sans-serif;
     .Skills {
       justify-content: center;
 
-      order: 0;
-
-      height: 117em;
-      border: 1px solid $desktop-blue;
+      height: 115em;
+      border: 1px solid $dark-blue;
       box-shadow: 1px 1px 3px $light-blue;
-      width: 80%;
+      width: 75%;
+      background-color: white;
+    }
+
+    .Projects {
+      justify-content: center;
+
+      height: 115em;
+      border: 1px solid $dark-red;
+      box-shadow: 1px 1px 3px $light-red;
+      width: 75%;
+      background-color: white;
+    }
+
+    .Education {
+      justify-content: center;
+
+      height: 115em;
+      border: 1px solid $dark-green;
+      box-shadow: 1px 1px 3px $light-green;
+      width: 75%;
+      background-color: white;
+    }
+
+    .Experience {
+      justify-content: center;
+
+      height: 115em;
+      border: 1px solid $desktop-yellow;
+      box-shadow: 1px 1px 3px $light-orange;
+      width: 75%;
       background-color: white;
     }
   }
