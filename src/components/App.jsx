@@ -14,15 +14,16 @@ function App() {
   return (
     <BrowserRouter>
     <div className="App">
-      <Navbar />
+      {/* <Navbar /> */}
       <Info />
-      <Switch>
+      <Summary />
+      {/* <Switch>
         <Route exact path="/resume" component={Summary} />
         <Route path="/skills" component={Skills} />
         <Route path="/projects" component={Projects} />
         <Route path="/education" component={Education} />
         <Route path="/experience" component={Experience} />
-      </Switch>
+      </Switch> */}
     </div>
     </BrowserRouter>
   );
