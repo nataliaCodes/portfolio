@@ -1,29 +1,29 @@
 {
   "files": {
-    "main.css": "/resume/static/css/main.8ba0fbb8.chunk.css",
-    "main.js": "/resume/static/js/main.b8e1717a.chunk.js",
-    "main.js.map": "/resume/static/js/main.b8e1717a.chunk.js.map",
+    "main.css": "/resume/static/css/main.78ad0087.chunk.css",
+    "main.js": "/resume/static/js/main.733a9913.chunk.js",
+    "main.js.map": "/resume/static/js/main.733a9913.chunk.js.map",
     "runtime-main.js": "/resume/static/js/runtime-main.c5fef7e4.js",
     "runtime-main.js.map": "/resume/static/js/runtime-main.c5fef7e4.js.map",
     "static/css/2.0f47fcaf.chunk.css": "/resume/static/css/2.0f47fcaf.chunk.css",
-    "static/js/2.3388cfb0.chunk.js": "/resume/static/js/2.3388cfb0.chunk.js",
-    "static/js/2.3388cfb0.chunk.js.map": "/resume/static/js/2.3388cfb0.chunk.js.map",
+    "static/js/2.e0bc5ed5.chunk.js": "/resume/static/js/2.e0bc5ed5.chunk.js",
+    "static/js/2.e0bc5ed5.chunk.js.map": "/resume/static/js/2.e0bc5ed5.chunk.js.map",
     "static/js/3.d6b7717b.chunk.js": "/resume/static/js/3.d6b7717b.chunk.js",
     "static/js/3.d6b7717b.chunk.js.map": "/resume/static/js/3.d6b7717b.chunk.js.map",
     "index.html": "/resume/index.html",
     "static/css/2.0f47fcaf.chunk.css.map": "/resume/static/css/2.0f47fcaf.chunk.css.map",
-    "static/css/main.8ba0fbb8.chunk.css.map": "/resume/static/css/main.8ba0fbb8.chunk.css.map",
-    "static/js/2.3388cfb0.chunk.js.LICENSE.txt": "/resume/static/js/2.3388cfb0.chunk.js.LICENSE.txt",
+    "static/css/main.78ad0087.chunk.css.map": "/resume/static/css/main.78ad0087.chunk.css.map",
+    "static/js/2.e0bc5ed5.chunk.js.LICENSE.txt": "/resume/static/js/2.e0bc5ed5.chunk.js.LICENSE.txt",
     "static/media/Nat.3320bea9.jpg": "/resume/static/media/Nat.3320bea9.jpg",
-    "static/media/Natalia.Martian.resume.5fa976b4.pdf": "/resume/static/media/Natalia.Martian.resume.5fa976b4.pdf",
+    "static/media/Natalia.Martian.resume.ef266495.pdf": "/resume/static/media/Natalia.Martian.resume.ef266495.pdf",
     "static/media/arrow-skills.a08367f9.png": "/resume/static/media/arrow-skills.a08367f9.png",
     "static/media/Experience.scss": "/resume/static/media/geometric2.30f950a7.png"
   },
   "entrypoints": [
     "static/js/runtime-main.c5fef7e4.js",
     "static/css/2.0f47fcaf.chunk.css",
-    "static/js/2.3388cfb0.chunk.js",
-    "static/css/main.8ba0fbb8.chunk.css",
-    "static/js/main.b8e1717a.chunk.js"
+    "static/js/2.e0bc5ed5.chunk.js",
+    "static/css/main.78ad0087.chunk.css",
+    "static/js/main.733a9913.chunk.js"
   ]
 }
