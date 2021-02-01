@@ -1,8 +1,10 @@
 .DottedBar {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: flex-end;
+  align-items: center;
 
-  // //font-size: 1.5em;
-  //padding: .5em 0 .5em 0;
+  .dot {
+    padding: 0 .7em 0 .7em;
+  }
 }
 

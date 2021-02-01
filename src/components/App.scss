@@ -355,13 +355,35 @@ $paragraph-font: 'Quicksand', sans-serif;
     }
 
     .Skills {
-      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 
       height: 115em;
       border: 1px solid $dark-blue;
       box-shadow: 1px 1px 3px $light-blue;
       width: 75%;
       background-color: white;
+      padding-top: 2em;
+
+      .SoftSkills {
+        display: flex;
+        justify-content: space-between;
+
+        width: 90%;
+      }
+
+      .soft-skills {
+
+        width: 55%;
+        border: 2px solid blue;
+        padding: 0 .5em 0 0;
+      }
+
+      // .Languages {
+
+      // }
+      
     }
 
     .Projects {

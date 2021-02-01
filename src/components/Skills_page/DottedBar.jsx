@@ -7,13 +7,57 @@ import './DottedBar.scss';
 function DottedBar(props) {
 
   return (
-    <div className="DottedBar">
-      <FontAwesomeIcon icon={fullCircle} />
-      <FontAwesomeIcon icon={fullCircle} />
-      {props.lang==="RO" || props.lang==="EN" || props.lang==="FR" ? <FontAwesomeIcon icon={fullCircle} /> : <FontAwesomeIcon icon={emptyCircle} />}
-      {props.lang==="RO" || props.lang==="EN" ? <FontAwesomeIcon icon={fullCircle} /> : <FontAwesomeIcon icon={emptyCircle} />}
-      {props.lang==="RO" || props.lang==="EN" ? <FontAwesomeIcon icon={fullCircle} /> : <FontAwesomeIcon icon={emptyCircle} />}
-    </div>
+    <tr>
+      <td>
+        <h3>{props.lang}: </h3>
+      </td>
+      <td>
+        <FontAwesomeIcon
+          className="dot"
+          icon={fullCircle}
+        />
+        <FontAwesomeIcon
+          className="dot"
+          icon={fullCircle}
+        />
+        {props.lang === "RO" || props.lang === "EN" || props.lang === "FR" ?
+          <FontAwesomeIcon
+            className="dot"
+            icon={fullCircle}
+          />
+          :
+          <FontAwesomeIcon
+            className="dot"
+            icon={emptyCircle}
+          />
+        }
+        {props.lang === "RO" || props.lang === "EN" ?
+          <FontAwesomeIcon
+            className="dot"
+            icon={fullCircle}
+          />
+          :
+          <FontAwesomeIcon
+            className="dot"
+            icon={emptyCircle}
+          />
+        }
+        {props.lang === "RO" || props.lang === "EN" ?
+          <FontAwesomeIcon
+            className="dot"
+            icon={fullCircle}
+          />
+          :
+          <FontAwesomeIcon
+            className="dot"
+            icon={emptyCircle}
+          />
+        }
+      </td>
+      <td>
+        <p>{props.level}</p>
+      </td>
+    </tr>
   );
 }
 
