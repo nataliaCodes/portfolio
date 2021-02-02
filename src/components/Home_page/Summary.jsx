@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom';
 
-import Viewer, { Worker } from '@phuocng/react-pdf-viewer';
-import '@phuocng/react-pdf-viewer/cjs/react-pdf-viewer.css';
+import { Viewer, Worker } from '@react-pdf-viewer/core';
+import '@react-pdf-viewer/core/lib/styles/index.css';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronDown } from '@fortawesome/free-solid-svg-icons'
@@ -25,7 +25,7 @@ function Summary() {
           <StyledButton icon={<FontAwesomeIcon icon={faDownload} />}>Download my CV</StyledButton>
         </Link>
       </article>
-      <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.5.207/build/pdf.worker.min.js">
+      <Worker workerUrl="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/2.6.347/pdf.worker.min.js">
         <div id="pdfviewer">
             <div
               style={{
