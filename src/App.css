@@ -1,1 +1,32 @@
+body {
+  background-color: #98c1d9;
+}
 
+.main {
+  display: flex;
+
+  width: 80vw;
+  height: 80vh;
+  margin: auto;
+  margin-top: 10vh;
+
+  border: 1px solid red;
+}
+
+header {
+  width: 25%;
+
+  border: 1px solid blue;
+}
+
+.main-content {
+  width: 65%;
+
+  border: 1px solid orange;
+}
+
+.navigation {
+  width: 10%;
+
+  border: 1px solid green;
+}
