@@ -1,8 +1,8 @@
 body {
-  background-color: #98c1d9;
+  background-color: #2e4057;
 }
 
-.main {
+.App {
   display: flex;
 
   width: 80vw;
