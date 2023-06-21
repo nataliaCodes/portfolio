@@ -1,56 +1,48 @@
 import './App.css';
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Routes, Route, useNavigate } from "react-router-dom";
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Resume from "./pages/Resume";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
-
-import * as Scroll from 'react-scroll';
-import { Link, Button, Element, Events, animateScroll as scroll, scrollSpy, scroller } from 'react-scroll';
+import Navbar from './components/Navbar';
+import Header from './components/Header';
+import { useState } from 'react';
 
 export default function App() {
+  const navigate = useNavigate();
+  const [listPosition, setListPosition] = useState(0);
+  const routeList = ['/', '/about', '/resume', '/portfolio', '/contact'];
+
+  function handleScroll(event) {
+    if (event.deltaY >= 0) {
+      if (listPosition <= 3) {
+        setListPosition(listPosition + 1);
+        navigate(routeList[listPosition + 1]);
+      }
+    } else {
+      if (listPosition <= 4 && listPosition !== 0) {
+        setListPosition(listPosition - 1);
+        navigate(routeList[listPosition - 1]);
+      }
+    }  
+  };
+
   return (
-    <BrowserRouter>
-    <div className="App">
-      <header>
-        {'>'}_ nataliaCodes
-      </header>
-      <div className='main-content'>
-      {/* <Routes>
-        <Route exact path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/resume" element={<Resume />} />
-        <Route path="/portfolio" element={<Portfolio />} />
-        <Route path="/contact" element={<Contact />} />
-      </Routes> */}
-      <div id="about" className='about'>About</div>
-      <div id="resume" className='about'>Resume</div>
-      <div id="portfolio" className='about'>Portfolio</div>
-      <div id="contact" className='about'>Contact</div>
+    <div className="App" >
+      <Header />
+      <div className='main-content' onWheel={handleScroll}>
+        <Routes>
+          <Route exact path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/resume" element={<Resume />} />
+          <Route path="/portfolio" element={<Portfolio />} />
+          <Route path="/contact" element={<Contact />} />
+        </Routes>
       </div>
-      <div className='navigation'>
-        <nav>
-          <ul>
-          <Link activeClass="active" to="about" spy={true} smooth={true}>
-            <li>About</li>
-          </Link>
-          <Link activeClass="active" to="resume" spy={true} smooth={true}>
-
-            <li>Resume</li>
-          </Link>
-          <Link activeClass="active" to="portfolio" spy={true} smooth={true}>
-
-            <li>Portfolio</li>
-          </Link>
-          <Link activeClass="active" to="contact" spy={true} smooth={true}>
-
-            <li>Contact</li>
-          </Link>
-          </ul>
-        </nav>
-      </div>
+      <Navbar />
     </div>
-    </BrowserRouter>
   );
-}
+};
+
+

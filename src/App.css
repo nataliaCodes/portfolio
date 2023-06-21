@@ -2,6 +2,11 @@ body {
   background-color: #2e4057;
 }
 
+a, a:visited {
+  text-decoration: none;
+  color: aliceblue;
+}
+
 .App {
   display: flex;
 
@@ -9,18 +14,31 @@ body {
   height: 90vh;
   margin: auto;
   margin-top: 5vh;
+  overflow: auto;
 
   border: 1px solid red;
 }
 
 header {
+  align-self: flex-start;
+
   width: 15%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
 
   border: 1px solid blue;
 }
 
+.blinking {
+  -webkit-animation: blink 1.5s steps(5, start) infinite;
+  animation: blink 1.5s steps(5, start) infinite;
+}
+
 .main-content {
   width: 70%;
+  overflow: auto;
 
   border: 1px solid orange;
 }
@@ -30,7 +48,26 @@ header {
 }
 
 .navigation {
+  align-self: flex-start;
+
   width: 15%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 
   border: 1px solid green;
 }
+
+/* Animations */
+@-webkit-keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
+@keyframes blink {
+  to {
+    visibility: hidden;
+  }
+}
+
