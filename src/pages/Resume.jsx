@@ -1,5 +1,5 @@
 export default function Resume() {
     return (
-        <div>Resume page</div>
+        <div className="page-content">Resume page</div>
     );
 }

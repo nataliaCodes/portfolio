@@ -1,5 +1,5 @@
 export default function Portfolio() {
     return (
-        <div>Portfolio page</div>
+        <div className="page-content">Portfolio page</div>
     );
 }
