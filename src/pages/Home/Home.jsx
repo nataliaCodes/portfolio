@@ -12,14 +12,20 @@ export default function Home() {
   return (
     <div className="page-content flex-row">
       <div className="intro-text largest bold">
-        <span>Hi, I'm Natalia</span><br />
-        <span>Web developer</span><br />
-        <span>Welcome to my site!</span>
+        <div>Hi, I'm Natalia</div>
+        <div className='changing-text'>
+          <span>Web developer</span>
+          <span>Team player</span>
+          <span>Problem solver</span>
+          <span>Quick thinker</span>
+          <span>Fast learner</span>
+        </div>
+        <div>Welcome to my site!</div>
       </div>
       <div className="intro-imgs flex-row">
         <img className='intro-img' src={portrait} alt="cartoon portrait" />
         <span className='about'>
-          <NavLink exact="true" activeclassname="active-menu" to="/about">
+          <NavLink exact="true" to="/about">
             <FontAwesomeIcon
               className='intro-svg'
               icon={faPersonCircleQuestion}
@@ -28,7 +34,7 @@ export default function Home() {
           </NavLink>
         </span>
         <span className='resume'>
-          <NavLink exact="true" activeclassname="active-menu" to="/resume">
+          <NavLink exact="true" to="/resume">
             <FontAwesomeIcon
               className='intro-svg'
               icon={faAddressCard}
@@ -37,7 +43,7 @@ export default function Home() {
           </NavLink>
         </span>
         <span className='portfolio'>
-          <NavLink exact="true" activeclassname="active-menu" to="/portfolio">
+          <NavLink exact="true" to="/portfolio">
             <FontAwesomeIcon
               className='intro-svg'
               icon={faBriefcase}
@@ -46,7 +52,7 @@ export default function Home() {
           </NavLink>
         </span>
         <span className='contact'>
-          <NavLink exact="true" activeclassname="active-menu" to="/contact">
+          <NavLink exact="true" to="/contact">
             <FontAwesomeIcon
               className='intro-svg'
               icon={faEnvelope}

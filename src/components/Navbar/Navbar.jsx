@@ -9,31 +9,31 @@ export default function Navbar(props) {
   return (
     <nav className={currentRoute === '/' ? 'hidden navigation' : 'navigation'}>
       <ul className="menu largest flex-column">
-        <NavLink exact="true" activeclassname="active-menu" to="/">
+        <NavLink exact="true" to="/">
           <li><FontAwesomeIcon icon={faHouseUser}></FontAwesomeIcon>&nbsp;</li>
         </NavLink>
-        <NavLink exact="true" activeclassname="active-menu" to="/about">
+        <NavLink exact="true" to="/about">
           {currentRoute === '/about' ?
             <li>About&nbsp;</li>
             :
             <li><FontAwesomeIcon icon={faPersonCircleQuestion}></FontAwesomeIcon>&nbsp;</li>
           }
         </NavLink>
-        <NavLink exact="true" activeclassname="active-menu" to="/resume">
+        <NavLink exact="true" to="/resume">
           {currentRoute === '/resume' ?
             <li>Resume&nbsp;</li>
             :
             <li><FontAwesomeIcon icon={faAddressCard}></FontAwesomeIcon>&nbsp;</li>
           }
         </NavLink>
-        <NavLink exact="true" activeclassname="active-menu" to="/portfolio">
+        <NavLink exact="true" to="/portfolio">
           {currentRoute === '/portfolio' ?
             <li>Portfolio&nbsp;</li>
             :
             <li><FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>&nbsp;</li>
           }
         </NavLink>
-        <NavLink exact="true" activeclassname="active-menu" to="/contact">
+        <NavLink exact="true" to="/contact">
           {currentRoute === '/contact' ?
             <li>Contact&nbsp;</li>
             :

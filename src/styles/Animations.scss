@@ -61,3 +61,19 @@
     transform: rotate(0deg);
   }
 }
+
+@keyframes switch {
+ 
+  0%,
+  5%,
+  100% {
+      filter: blur(0px);
+      opacity: 1;
+  }
+
+  50%,
+  80% {
+      filter: blur(180px);
+      opacity: 0;
+  }
+}
