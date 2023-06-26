@@ -1,0 +1,76 @@
+@import './styles/Animations.scss';
+@import './styles/Colors.scss';
+@import './components/Header/Header.scss';
+@import './components/Footer/Footer.scss';
+@import './components/Navbar/Navbar.scss';
+@import './pages/Home/Home.scss';
+
+body {
+  background-color: $darkGray;
+  color: $lightBlue;
+}
+
+a,
+a:visited {
+  text-decoration: none;
+  color: $lightBlue;
+}
+
+a:hover {
+  color: $accentYellow;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.large {
+  font-size: large;
+}
+
+.x-large {
+  font-size: xx-large;
+}
+
+.largest {
+  font-size: xxx-large;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  visibility: hidden;
+}
+
+.App {
+  justify-content: space-between;
+
+  width: 95vw;
+  height: 90vh;
+  margin: auto;
+  margin-top: 5vh;
+  overflow: hidden;
+  
+  .main-content {
+    width: 100%;
+    
+    .page-content {
+      justify-content: space-between;
+      align-items: center;
+    
+      width: 90%;
+    }
+  }
+}

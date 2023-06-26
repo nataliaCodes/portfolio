@@ -1,0 +1,22 @@
+.navigation {
+  align-self: center;
+
+  width: 10%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  
+  .menu {
+    align-items: flex-end;
+    justify-content: space-between;
+  
+    height: 50vh;
+    border-right: 5px solid;
+
+    .active {
+      color: $accentYellow;
+      font-size: 2.5rem;
+      border-right: 5px solid;
+    }
+  }
+}

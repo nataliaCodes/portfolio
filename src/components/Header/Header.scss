@@ -1,0 +1,27 @@
+header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  align-self: flex-start;
+
+  width: 100%;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  padding: 5px;
+  color: $lightBlue;
+}
+
+.fa-chevron-right {
+  font-size: 1.8em;
+}
+
+.blinking {
+  -webkit-animation: blink 1.5s steps(5, start) infinite;
+  animation: blink 1.5s steps(5, start) infinite;
+  font-size: 1.7em;
+}
+
+.logo {
+  font-size: 2.3em;
+}
