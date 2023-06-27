@@ -10,18 +10,22 @@ header {
   top: 0;
   padding: 5px;
   color: $lightBlue;
-}
+  
+  .fa-chevron-right {
+    font-size: 1.8em;
+  }
+  
+  .blinking {
+    -webkit-animation: blink 1.5s steps(5, start) infinite;
+    animation: blink 1.5s steps(5, start) infinite;
+    font-size: 1.7em;
+  }
+  
+  .logo {
+    font-size: 2.3em;
 
-.fa-chevron-right {
-  font-size: 1.8em;
-}
-
-.blinking {
-  -webkit-animation: blink 1.5s steps(5, start) infinite;
-  animation: blink 1.5s steps(5, start) infinite;
-  font-size: 1.7em;
-}
-
-.logo {
-  font-size: 2.3em;
+    &:hover {
+      text-shadow: 0px 0px 10px $lightBlue;
+    }
+  }
 }
