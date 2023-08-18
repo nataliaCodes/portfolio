@@ -20,8 +20,8 @@ export default function Navbar() {
             <li><FontAwesomeIcon icon={faPersonCircleQuestion}></FontAwesomeIcon>&nbsp;</li>
           }
         </NavLink>
-        <NavLink exact="true" to="/resume">
-          {route === '/resume' ?
+        <NavLink exact="true" to="/skills">
+          {route === '/skills' ?
             <li>Resume&nbsp;</li>
             :
             <li><FontAwesomeIcon icon={faAddressCard}></FontAwesomeIcon>&nbsp;</li>

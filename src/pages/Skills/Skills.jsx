@@ -20,13 +20,13 @@ import cypress from '../../img/cypress.svg';
 import jasmine from '../../img/jasmine.svg';
 import eslint from '../../img/eslint.svg';
 
-export default function Resume() {
+export default function Skills() {
   const langLogos = [js, ts, sql, html, css];
   const languages = ['JavaScript', 'TypeScript', 'SQL', 'HTML5', 'CSS3'];
   const langContent = langLogos.map(((logo, i) => {
     return (
       <span key={i} className='flex-column align-center logos'>
-        <img src={logo} alt={languages[i] + ' logo'} className={languages[i]}></img>
+        <img src={logo} alt={languages[i] + ' logo'} className='logo'></img>
         <p>{languages[i]}</p>
       </span>
     )
@@ -37,7 +37,7 @@ export default function Resume() {
   const libContent = libLogos.map((logo, i) => {
     return (
       <span key={i} className='flex-column align-center logos'>
-        <img src={logo} alt={libraries[i] + ' logo'} className={libraries[i]}></img>
+        <img src={logo} alt={libraries[i] + ' logo'} className='logo'></img>
         <p>{libraries[i]}</p>
       </span>
     )
@@ -48,7 +48,7 @@ export default function Resume() {
   const testContent = testLogos.map((logo, i) => {
     return (
       <span key={i} className='flex-column align-center logos'>
-        <img src={logo} alt={testLibs[i] + ' logo'} className={testLibs[i]}></img>
+        <img src={logo} alt={testLibs[i] + ' logo'} className='logo'></img>
         <p>{testLibs[i]}</p>
       </span>
     )
@@ -59,15 +59,12 @@ export default function Resume() {
       <p className='x-large profile'>Though my main experience is on the front-end, I can build full-stack PERN / PEAN single-page apps.</p>
       <p className='x-large profile'>Building, styling, animating, whatever the need I have the solution for it. Some of the tools I use:</p>
       <div className='flex-row wrap full-width'>
-        {/* <h2 className='full-width'>Programming languages:</h2> */}
         <div className='flex-row justify-center full-width languages'>{langContent}</div>
       </div>
       <div className='flex-row wrap full-width'>
-        {/* <h2 className='full-width'>Frameworks/libraries:</h2> */}
         <div className='flex-row justify-center full-width libraries'>{libContent}</div>
       </div>
       <div className='flex-row wrap full-width'>
-        {/* <h2 className='full-width'>Testing:</h2> */}
         <div className='flex-row justify-center full-width test'>{testContent}</div>
       </div>
       <p className='large profile'>I am always up for a challenge and curious to discover new technologies, so the list above will keep growing.</p>

@@ -33,8 +33,8 @@ export default function Home() {
             ></FontAwesomeIcon>
           </NavLink>
         </span>
-        <span className='resume'>
-          <NavLink exact="true" to="/resume">
+        <span className='skills'>
+          <NavLink exact="true" to="/skills">
             <FontAwesomeIcon
               className='intro-svg'
               icon={faAddressCard}
