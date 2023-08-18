@@ -2,17 +2,15 @@ import './App.scss';
 import { Routes, Route } from "react-router-dom";
 import Home from "./pages/Home/Home";
 import About from "./pages/About";
-import Resume from "./pages/Resume";
+import Resume from "./pages/Resume/Resume";
 import Portfolio from "./pages/Portfolio";
 import Contact from "./pages/Contact";
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
-import { useState } from 'react';
 
 export default function App() {
   // const navigate = useNavigate();
-  const [currentRoute, setCurrentRoute] = useState('/');
 
   //switch routes when user scrolls
   // function handleScroll(event) {
@@ -36,23 +34,10 @@ export default function App() {
   //   }
   // };
 
-  function handleClick(e) {
-    const route = e.target.baseURI.slice(21, e.target.baseURI.length);
-
-    //if click is on one of the menu links, set route in state
-    if (e.target.localName === 'svg' || e.target.localName === 'path') {
-      setCurrentRoute(route);
-    }
-  }
-
-  function resetRoute(home) {
-    setCurrentRoute(home);
-  }
-
   return (
     <div className="App flex-column">
-      <Header resetRoute={resetRoute} />
-      <div className='main-content flex-row' onClick={handleClick}>
+      <Header />
+      <div className='main-content flex-row'>
         <Routes>
           <Route exact path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
@@ -60,7 +45,7 @@ export default function App() {
           <Route path="/portfolio" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
-        <Navbar route={currentRoute} onClick={handleClick}/>
+        <Navbar />
       </div>
       <Footer />
     </div>

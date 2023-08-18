@@ -1,0 +1,31 @@
+img {
+  height: 5rem;
+  width: auto;
+  filter: brightness(0) saturate(100%) invert(93%) sepia(16%) saturate(244%) hue-rotate(146deg) brightness(102%) contrast(98%);
+
+  &:hover {
+    filter: none;
+  }
+}
+
+h2.full-width {
+  text-align: center;
+}
+
+span.logos {
+  margin: 0 1.5rem;
+}
+
+.languages {
+  margin-top: 3rem;
+  margin-bottom: 1rem;
+}
+
+.test {
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.profile {
+  margin: .5rem 0;
+}
