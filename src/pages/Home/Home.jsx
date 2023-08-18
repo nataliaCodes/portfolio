@@ -16,8 +16,9 @@ export default function Home() {
         <div className='changing-text'>
           <span>Web developer</span>
           <span>Team player</span>
+          <span>Tree hugger</span>
           <span>Problem solver</span>
-          <span>Quick thinker</span>
+          <span>Cat lover</span>
           <span>Fast learner</span>
         </div>
         <div>Welcome to my site!</div>

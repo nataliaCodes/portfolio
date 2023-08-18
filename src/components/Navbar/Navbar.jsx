@@ -22,14 +22,14 @@ export default function Navbar() {
         </NavLink>
         <NavLink exact="true" to="/skills">
           {route === '/skills' ?
-            <li>Resume&nbsp;</li>
+            <li>Skills&nbsp;</li>
             :
             <li><FontAwesomeIcon icon={faAddressCard}></FontAwesomeIcon>&nbsp;</li>
           }
         </NavLink>
         <NavLink exact="true" to="/portfolio">
           {route === '/portfolio' ?
-            <li>Portfolio&nbsp;</li>
+            <li>Projects&nbsp;</li>
             :
             <li><FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>&nbsp;</li>
           }

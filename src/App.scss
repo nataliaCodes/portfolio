@@ -4,6 +4,7 @@
 @import './components/Footer/Footer.scss';
 @import './components/Navbar/Navbar.scss';
 @import './pages/Home/Home.scss';
+@import './pages/About/About.scss';
 @import './pages/Skills/Skills.scss';
 
 body {
@@ -27,6 +28,11 @@ ul {
 }
 
 .x-large {
+  font-size: x-large;
+}
+
+
+.xx-large {
   font-size: xx-large;
 }
 
