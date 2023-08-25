@@ -1,0 +1,14 @@
+.form-container {
+  width: 60%;
+  margin: auto;
+  border: 5px solid $lightBlue;
+  border-radius: 4px;
+  padding: 5rem;
+}
+
+.transparent-input {
+  height: 2rem;
+  background: transparent;
+  border: none;
+  border-bottom: 2px solid white;
+}
