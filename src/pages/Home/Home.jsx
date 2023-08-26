@@ -11,7 +11,7 @@ export default function Home() {
 
   return (
     <div className="page-content flex-row">
-      <div className="intro-text largest bold">
+      <div className="intro-text largest-text bold">
         <div>Hi, I'm Natalia</div>
         <div className='changing-text'>
           <span>Web developer</span>

@@ -3,7 +3,7 @@ import { faLinkedinIn, faGithubAlt } from '@fortawesome/free-brands-svg-icons';
 
 export default function Header() {
   return (
-    <footer className="links xx-large">
+    <footer className="links xx-large-text">
       <a href="https://www.linkedin.com/in/nmartian/" target="_blank" rel="noreferrer">
         <FontAwesomeIcon icon={faLinkedinIn} />
       </a>

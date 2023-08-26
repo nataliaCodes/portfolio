@@ -1,33 +1,57 @@
-import React, { useRef } from 'react';
+import React, { useRef, useState } from 'react';
 import emailjs from '@emailjs/browser';
 
 export default function Contact() {
   const form = useRef();
+  const [sentOK, setSentOK] = useState(false);
+  const [haveErr, setHaveErr] = useState(false);
 
   function sendEmail(e) {
     e.preventDefault();
 
-    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
-      .then(
-        (result) => {
-          console.log('sent:', result.text);
-          e.target.reset();
-        }, (error) => {
-          console.log('error:', error.text);
-        });
+    setSentOK(true);
+    // e.target.reset();
+    const form = document.getElementById('contact-form');
+    const name = form.elements[0];
+    console.log('name :', name.value);
+    const email = form.elements[1];
+    console.log('email :', email.value);
+    const message = form.elements[2];
+    console.log('message :', message.value);
+
+    // emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+    //   .then(
+    //     (result) => {
+    //       console.log('sent:', result.text);
+    //       if (result.text === 'OK') {
+    //         setSentOK(true);
+    //         console.log('sentOK :', sentOK);
+    //         e.target.reset();
+    //       }
+    //     }, (error) => {
+    //       console.log('error:', error.text);
+    //       setSentOK(false);
+    //       setHaveErr(true);
+    //     });
   };
 
   return (
     <div className="page-content">
-      <form className='flex-column form-container' ref={form} onSubmit={sendEmail}>
-        {/* <label>Name</label> */}
-        <input className='transparent-input' type="text" placeholder='Your name' name="user_name" />
-        {/* <label>Email</label> */}
-        <input className='transparent-input' type="email" placeholder='Your email' name="user_email" />
-        {/* <label>Message</label> */}
-        <textarea className='transparent-input' rows={60} placeholder='Your message' name="message"/>
-        <input type="submit" value="SUBMIT" />
-      </form>
+      {haveErr === false ? (
+        sentOK === false ? <form className='flex-column contact-container' ref={form} onSubmit={sendEmail} id='contact-form'>
+          <input className='transparent-input x-large-text' type="text" placeholder='Your name' name="user_name" />
+          <input className='transparent-input x-large-text' type="email" placeholder='Your email' name="user_email" />
+          <textarea className='transparent-input x-large-text' rows={60} placeholder='Your message' name="message" />
+          <button type="submit">SUBMIT</button>
+        </form> : 
+        <div className=' flex-column align-center justify-center contact-container xx-large-text'>
+          <p>Your message has been sent.<br/> I will get back to you shortly!</p>
+        </div>
+        ) :
+        <div className=' flex-column align-center justify-center contact-container xx-large-text'>
+          <p>There was an error.<br/> Please refresh and try again!</p>
+        </div>
+      }
     </div>
   );
 }

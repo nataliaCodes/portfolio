@@ -1,14 +1,65 @@
-.form-container {
+.contact-container {
+  justify-content: space-around;
+
   width: 60%;
+  height: 45vh;
   margin: auto;
   border: 5px solid $lightBlue;
   border-radius: 4px;
   padding: 5rem;
-}
 
-.transparent-input {
-  height: 2rem;
-  background: transparent;
-  border: none;
-  border-bottom: 2px solid white;
+  textarea {
+    resize: vertical;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  .transparent-input {
+    height: 3rem;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid $lightBlue;
+    color: $lightBlue;
+    margin: 1rem 0;
+
+    &:focus-visible {
+      outline: none;
+    }
+
+    // override autofill styling
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus,
+    &:-webkit-autofill:active {
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    //override placeholder styling
+    &::placeholder {
+      font-size: x-large;
+      color: $lightBlue;
+      position: absolute;
+      bottom: 10px;
+      display: inline-block;
+      opacity: 50%;
+      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+  }
+
+  button {
+    align-self: center;
+
+    width: fit-content;
+    font-size: x-large;
+    background: transparent;
+    border: 3px solid $lightBlue;
+    padding: 0.7rem 2rem;
+    border-radius: 2rem;
+    margin-top: 1rem;
+    color: $lightBlue;
+  }
+
+  p {
+    text-align: center;
+  }
 }

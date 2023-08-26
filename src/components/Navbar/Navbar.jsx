@@ -9,7 +9,7 @@ export default function Navbar() {
 
   return (
     <nav className={route === '/' ? 'hidden navigation' : 'navigation'}>
-      <ul className="menu largest flex-column">
+      <ul className="menu largest-text flex-column">
         <NavLink exact="true" to="/">
           <li><FontAwesomeIcon icon={faHouseUser}></FontAwesomeIcon>&nbsp;</li>
         </NavLink>

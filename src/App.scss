@@ -24,27 +24,30 @@ ul {
   list-style-type: none;
 }
 
-.large {
+// general text styles
+.large-text {
   font-size: large;
 }
 
-.x-large {
+.x-large-text {
   font-size: x-large;
 }
 
 
-.xx-large {
+.xx-large-text {
   font-size: xx-large;
 }
 
-.largest {
+.largest-text {
   font-size: xxx-large;
 }
 
 .bold {
   font-weight: bold;
 }
+//
 
+//general flex styles
 .flex-row {
   display: flex;
   flex-direction: row;
@@ -66,6 +69,7 @@ ul {
 .justify-center {
   justify-content: center;
 }
+//
 
 .hidden {
   visibility: hidden;
