@@ -9,30 +9,20 @@ export default function Contact() {
   function sendEmail(e) {
     e.preventDefault();
 
-    setSentOK(true);
-    // e.target.reset();
-    const form = document.getElementById('contact-form');
-    const name = form.elements[0];
-    console.log('name :', name.value);
-    const email = form.elements[1];
-    console.log('email :', email.value);
-    const message = form.elements[2];
-    console.log('message :', message.value);
-
-    // emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
-    //   .then(
-    //     (result) => {
-    //       console.log('sent:', result.text);
-    //       if (result.text === 'OK') {
-    //         setSentOK(true);
-    //         console.log('sentOK :', sentOK);
-    //         e.target.reset();
-    //       }
-    //     }, (error) => {
-    //       console.log('error:', error.text);
-    //       setSentOK(false);
-    //       setHaveErr(true);
-    //     });
+    emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+      .then(
+        (result) => {
+          console.log('sent:', result.text);
+          if (result.text === 'OK') {
+            setSentOK(true);
+            console.log('sentOK :', sentOK);
+            e.target.reset();
+          }
+        }, (error) => {
+          console.log('error:', error.text);
+          setSentOK(false);
+          setHaveErr(true);
+        });
   };
 
   return (
@@ -49,7 +39,7 @@ export default function Contact() {
         </div>
         ) :
         <div className=' flex-column align-center justify-center contact-container xx-large-text'>
-          <p>There was an error.<br/> Please refresh and try again!</p>
+          <p>There was an error.<br/> Please try again later!</p>
         </div>
       }
     </div>
