@@ -7,6 +7,7 @@
 @import './pages/About/About.scss';
 @import './pages/Skills/Skills.scss';
 @import './pages/Contact/Contact.scss';
+@import './pages/Portfolio/Portfolio.scss';
 
 body {
   background-color: $darkGray;
@@ -79,7 +80,7 @@ ul {
   width: 100%;
 }
 
-.underline:hover {
+.underline {
   text-decoration: underline;
 }
 

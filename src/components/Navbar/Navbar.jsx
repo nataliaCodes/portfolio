@@ -8,7 +8,7 @@ export default function Navbar() {
   console.log('route :', route);
 
   return (
-    <nav className={route === '/' ? 'hidden navigation' : 'navigation'}>
+    <nav className={(route === '/' || route === '/portfolio') ? 'hidden navigation' : 'navigation'}>
       <ul className="menu largest-text flex-column">
         <NavLink exact="true" to="/">
           <li><FontAwesomeIcon icon={faHouseUser}></FontAwesomeIcon>&nbsp;</li>
