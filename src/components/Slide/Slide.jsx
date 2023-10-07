@@ -1,27 +1,26 @@
 export default function Slide({ slide, active }) {
 
   return (
-    <div 
+    <div
       className="slide"
       data-active={active}
     >
       <div
-        className="slideBackground"
-        style={{
-          backgroundImage: `url('${slide.image}')`
-        }}
-      />
-      <div
-        className="slideContent"
-        style={{
-          backgroundImage: `url('${slide.image}')`
-        }}
+        className="slide-content flex-row align-center"
+
       >
-        <div className="slideContentInner">
-          <h2 className="slideTitle">{slide.title}</h2>
-          <h3 className="slideSubtitle">{slide.subtitle}</h3>
-          <p className="slideDescription">{slide.description}</p>
+        <div className="slide-text">
+          <h2 className="slide-title">{slide.title}</h2>
+          <p className="slide-description">{slide.description}</p>
+          <p className="slide-stack">
+            <span>Built with: </span>
+            {slide.stack}
+          </p>
         </div>
+        <div
+          className="slide-image"
+          style={{ backgroundImage: `url('${slide.image}')` }}
+        ></div>
       </div>
     </div>
 
