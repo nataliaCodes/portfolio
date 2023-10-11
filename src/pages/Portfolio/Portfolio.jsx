@@ -40,19 +40,28 @@ export default function Portfolio() {
     }
   ];
 
-  const [current, setCurrent] = useState(2);
+  // const [current, setCurrent] = useState(2);
 
   return (
-    <div className="page-content">
-      <div className="slides flex-row">
-        <button onClick={() => current > 0 && setCurrent(current - 1)}>‹</button>
-
-        {[...slides].map((slide, i) => {
-          return <Slide slide={slide} active={current === i ? true : null} key={i} />;
-        })}
-
-        <button onClick={() => (current < slides.length - 1) && setCurrent(current + 1)}>›</button>
+    <div className="container">
+      <div className="carousel">
+        <div className="carousel-inner">
+          {[...slides].map((slide, i) => (
+            <Slide slide={slide} key={i} />
+          ))}
+        </div>
       </div>
     </div>
+    // <div className="page-content">
+    //   <div className="slides flex-row">
+    //     <button onClick={() => current > 0 && setCurrent(current - 1)}>‹</button>
+
+    //     {[...slides].map((slide, i) => {
+    //       return <Slide slide={slide} active={current === i ? true : null} key={i} />;
+    //     })}
+
+    //     <button onClick={() => (current < slides.length - 1) && setCurrent(current + 1)}>›</button>
+    //   </div>
+    // </div>
   );
 }

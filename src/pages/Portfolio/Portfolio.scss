@@ -1,16 +1,31 @@
-.slides {
-  width: 95vw;
-
-  button:first-child {
-    position: absolute;
-    top: 50vh;
-    z-index: 1;
-  }
-
-  button:last-child {
-    position: absolute;
-    left: 96.5vw;
-    top: 50vh;
-    z-index: 2;
-  }
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  min-height: 100vh;
+}
+
+// .slides {
+//   width: 95vw;
+
+//   button:first-child {
+//     position: absolute;
+//     top: 50vh;
+//     z-index: 1;
+//   }
+
+//   button:last-child {
+//     position: absolute;
+//     left: 96.5vw;
+//     top: 50vh;
+//     z-index: 2;
+//   }
+// }
