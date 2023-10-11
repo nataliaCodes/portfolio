@@ -1,69 +1,75 @@
-.slide-content {
-  justify-content: space-evenly;
-  align-content: center;
-  width: 95vw;
-  height: 35vw;
+.carousel-item {
+  display: inline-block;
+  width: 100%;
+  margin-top: -60vh;
 }
 
-.slide-text {
-  width: 50rem;
-  text-align: center;
+// .slide-content {
+//   justify-content: space-evenly;
+//   align-content: center;
+//   width: 95vw;
+//   height: 35vw;
+// }
 
-  .slide-title {
-    font-size: 2rem;
-    font-weight: normal;
-    letter-spacing: 0.2ch;
-    text-transform: uppercase;
-    margin: 0;
-  }
+// .slide-text {
+//   width: 50rem;
+//   text-align: center;
 
-  .slide-description {
-    margin: 0;
-    font-size: 1.5rem;
-    letter-spacing: 0.2ch;
-    margin: 2rem 0;
-  }
+//   .slide-title {
+//     font-size: 2rem;
+//     font-weight: normal;
+//     letter-spacing: 0.2ch;
+//     text-transform: uppercase;
+//     margin: 0;
+//   }
 
-  .slide-stack {
-    font-size: 1.3rem;
+//   .slide-description {
+//     margin: 0;
+//     font-size: 1.5rem;
+//     letter-spacing: 0.2ch;
+//     margin: 2rem 0;
+//   }
 
-    >span {
-      font-weight: bold;
-    }
-  }
-}
+//   .slide-stack {
+//     font-size: 1.3rem;
 
-.slide-image {
-  width:60%;
-  height: 100%;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
+//     >span {
+//       font-weight: bold;
+//     }
+//   }
+// }
 
-.slide[data-active] {
-  z-index: 2;
-  pointer-events: auto;
+// .slide-image {
+//   width:60%;
+//   height: 100%;
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
 
-  .slideBackground {
-    opacity: 0.2;
-    transform: none;
-  }
+// .slide[data-active] {
+//   z-index: 2;
+//   pointer-events: auto;
 
-  .slideContentInner {
-    opacity: 1;
-  }
+//   .slideBackground {
+//     opacity: 0.2;
+//     transform: none;
+//   }
 
-  .slideContent {
-    --x: calc(var(--px) - 0.5);
-    --y: calc(var(--py) - 0.5);
-    opacity: 1;
+//   .slideContentInner {
+//     opacity: 1;
+//   }
 
-    transform: perspective(1000px);
+//   .slideContent {
+//     --x: calc(var(--px) - 0.5);
+//     --y: calc(var(--py) - 0.5);
+//     opacity: 1;
 
-    &:hover {
-      transition: none;
-      transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
-        rotateX(calc(var(--y) * -45deg));
-    }
-  }
-}
+//     transform: perspective(1000px);
+
+//     &:hover {
+//       transition: none;
+//       transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
+//         rotateX(calc(var(--y) * -45deg));
+//     }
+//   }
+// }

@@ -5,12 +5,22 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 .container {
   display: flex;
   align-items: center;
   justify-content: center;
-  
-  min-height: 100vh;
+}
+
+.carousel {
+  margin: 0 auto;
+  overflow: hidden;
+  max-width: 95vw;
+}
+
+.carousel-inner {
+  white-space: nowrap;
+  height: 70vh;
 }
 
 // .slides {
