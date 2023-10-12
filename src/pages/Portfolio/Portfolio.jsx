@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Slide from '../../components/Slide/Slide';
 import CarouselControls from '../../components/CarouselControls/CarouselControls';
+import CarouselIndicators from '../../components/CarouselIndicators/CarouselIndicators';
 
 export default function Portfolio() {
   const slides = [
@@ -53,6 +54,10 @@ export default function Portfolio() {
     setCurrent(index);
   }
 
+  const switchIndex = (index) => {
+    setCurrent(index);
+  }
+
   return (
     <div className="container">
       <div className="carousel">
@@ -64,6 +69,7 @@ export default function Portfolio() {
             <Slide slide={slide} key={i} />
           ))}
         </div>
+        <CarouselIndicators slides={slides} currentIndex={current} switchIndex={switchIndex} />
         <CarouselControls prev={prev} next={next} />
       </div>
     </div>
