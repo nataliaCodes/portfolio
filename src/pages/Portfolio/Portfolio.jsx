@@ -1,5 +1,6 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import Slide from '../../components/Slide/Slide';
+import CarouselControls from '../../components/CarouselControls/CarouselControls';
 
 export default function Portfolio() {
   const slides = [
@@ -40,16 +41,39 @@ export default function Portfolio() {
     }
   ];
 
-  // const [current, setCurrent] = useState(2);
+  const [current, setCurrent] = useState(0);
+
+  const prev = () => {
+    const index = current > 0 ? current - 1 : slides.length -1;
+    setCurrent(index);
+  }
+
+  const next = () => {
+    const index = current < slides.length -1 ? current + 1 : 0;
+    setCurrent(index);
+  }
+
+  //!!activate this if you want conitnuous image scrolling!!
+  // useEffect(() => {
+  //   const slideInterval = setInterval(() => {
+  //     setCurrent(current => current < slides.length - 1 ? current + 1 : 0)
+  //   }, 3000)
+
+  //   return () => clearInterval(slideInterval)
+  // }, [slides.length])
 
   return (
     <div className="container">
       <div className="carousel">
-        <div className="carousel-inner">
+        <div 
+          className="carousel-inner"
+          style={{ transform: `translateX(${-current * 100}%)`}}
+        >
           {[...slides].map((slide, i) => (
             <Slide slide={slide} key={i} />
           ))}
         </div>
+        <CarouselControls prev={prev} next={next} />
       </div>
     </div>
     // <div className="page-content">

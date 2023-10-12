@@ -15,12 +15,13 @@
 .carousel {
   margin: 0 auto;
   overflow: hidden;
-  max-width: 95vw;
+  max-width: 96vw;
 }
 
 .carousel-inner {
   white-space: nowrap;
   height: 70vh;
+  transition: ease 1s;
 }
 
 // .slides {

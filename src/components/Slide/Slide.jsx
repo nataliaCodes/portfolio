@@ -2,7 +2,7 @@ export default function Slide({ slide, active }) {
 
   return (
     <div className="carousel-item">
-      <img src={slide.image} />
+      <img src={slide.image} alt={slide.title} />
     </div>
     // <div
     //   className="slide"
