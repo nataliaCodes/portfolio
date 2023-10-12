@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState } from 'react';
 import Slide from '../../components/Slide/Slide';
 import CarouselControls from '../../components/CarouselControls/CarouselControls';
 
@@ -42,38 +42,16 @@ export default function Portfolio() {
   ];
 
   const [current, setCurrent] = useState(0);
-  const slideInterval = useRef();
 
   const prev = () => {
-    startSlideTimer()
     const index = current > 0 ? current - 1 : slides.length - 1;
     setCurrent(index);
   }
 
   const next = () => {
-    startSlideTimer()
     const index = current < slides.length - 1 ? current + 1 : 0;
     setCurrent(index);
   }
-
-  const startSlideTimer = () => {
-    stopSlideTimer();
-    slideInterval.current = setInterval(() => {
-      setCurrent(currentSlide => currentSlide < slides.length - 1 ? currentSlide + 1 : 0)
-    }, 3000)
-  }
-
-  const stopSlideTimer = () => {
-    if (slideInterval.current) {
-      clearInterval(slideInterval.current)
-    }
-  }
-
-  useEffect(() => {
-    startSlideTimer()
-
-    return () => stopSlideTimer()
-  }, [])
 
   return (
     <div className="container">
@@ -83,22 +61,11 @@ export default function Portfolio() {
           style={{ transform: `translateX(${-current * 100}%)` }}
         >
           {[...slides].map((slide, i) => (
-            <Slide slide={slide} key={i} stopSlide={stopSlideTimer} startSlide={startSlideTimer} />
+            <Slide slide={slide} key={i} />
           ))}
         </div>
         <CarouselControls prev={prev} next={next} />
       </div>
     </div>
-    // <div className="page-content">
-    //   <div className="slides flex-row">
-    //     <button onClick={() => current > 0 && setCurrent(current - 1)}>‹</button>
-
-    //     {[...slides].map((slide, i) => {
-    //       return <Slide slide={slide} active={current === i ? true : null} key={i} />;
-    //     })}
-
-    //     <button onClick={() => (current < slides.length - 1) && setCurrent(current + 1)}>›</button>
-    //   </div>
-    // </div>
   );
 }

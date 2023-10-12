@@ -1,10 +1,10 @@
-*,
-::before,
-::after {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+// *,
+// ::before,
+// ::after {
+//   margin: 0;
+//   padding: 0;
+//   box-sizing: border-box;
+// }
 
 .container {
   display: flex;
@@ -23,20 +23,3 @@
   height: 70vh;
   transition: ease 1s;
 }
-
-// .slides {
-//   width: 95vw;
-
-//   button:first-child {
-//     position: absolute;
-//     top: 50vh;
-//     z-index: 1;
-//   }
-
-//   button:last-child {
-//     position: absolute;
-//     left: 96.5vw;
-//     top: 50vh;
-//     z-index: 2;
-//   }
-// }
