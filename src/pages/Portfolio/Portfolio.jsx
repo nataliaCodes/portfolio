@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import Slide from '../../components/Slide/Slide';
 import CarouselControls from '../../components/CarouselControls/CarouselControls';
 
@@ -42,35 +42,48 @@ export default function Portfolio() {
   ];
 
   const [current, setCurrent] = useState(0);
+  const slideInterval = useRef();
 
   const prev = () => {
-    const index = current > 0 ? current - 1 : slides.length -1;
+    startSlideTimer()
+    const index = current > 0 ? current - 1 : slides.length - 1;
     setCurrent(index);
   }
 
   const next = () => {
-    const index = current < slides.length -1 ? current + 1 : 0;
+    startSlideTimer()
+    const index = current < slides.length - 1 ? current + 1 : 0;
     setCurrent(index);
   }
 
-  //!!activate this if you want conitnuous image scrolling!!
-  // useEffect(() => {
-  //   const slideInterval = setInterval(() => {
-  //     setCurrent(current => current < slides.length - 1 ? current + 1 : 0)
-  //   }, 3000)
+  const startSlideTimer = () => {
+    stopSlideTimer();
+    slideInterval.current = setInterval(() => {
+      setCurrent(currentSlide => currentSlide < slides.length - 1 ? currentSlide + 1 : 0)
+    }, 3000)
+  }
 
-  //   return () => clearInterval(slideInterval)
-  // }, [slides.length])
+  const stopSlideTimer = () => {
+    if (slideInterval.current) {
+      clearInterval(slideInterval.current)
+    }
+  }
+
+  useEffect(() => {
+    startSlideTimer()
+
+    return () => stopSlideTimer()
+  }, [])
 
   return (
     <div className="container">
       <div className="carousel">
-        <div 
+        <div
           className="carousel-inner"
-          style={{ transform: `translateX(${-current * 100}%)`}}
+          style={{ transform: `translateX(${-current * 100}%)` }}
         >
           {[...slides].map((slide, i) => (
-            <Slide slide={slide} key={i} />
+            <Slide slide={slide} key={i} stopSlide={stopSlideTimer} startSlide={startSlideTimer} />
           ))}
         </div>
         <CarouselControls prev={prev} next={next} />

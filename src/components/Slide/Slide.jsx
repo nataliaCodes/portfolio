@@ -1,7 +1,7 @@
-export default function Slide({ slide, active }) {
+export default function Slide({ slide, stopSlide, startSlide }) {
 
   return (
-    <div className="carousel-item">
+    <div className="carousel-item" onMouseEnter={stopSlide} onMouseOut={startSlide} onClick={stopSlide}>
       <img src={slide.image} alt={slide.title} />
     </div>
     // <div
