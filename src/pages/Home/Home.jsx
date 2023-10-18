@@ -5,10 +5,6 @@ import { faPersonCircleQuestion, faAddressCard, faBriefcase, faEnvelope } from "
 
 export default function Home() {
 
-  function reverseSpin(e) {
-    e.target.classList.add('reverse-spin');
-  }
-
   return (
     <div className="page-content flex-row">
       <div className="intro-text largest-text bold">
@@ -30,8 +26,8 @@ export default function Home() {
             <FontAwesomeIcon
               className='intro-svg'
               icon={faPersonCircleQuestion}
-              onMouseLeave={reverseSpin}
             ></FontAwesomeIcon>
+            <span className='menu-text flex-row align-center justify-center'>About <br /> me</span>
           </NavLink>
         </span>
         <span className='skills'>
@@ -39,8 +35,8 @@ export default function Home() {
             <FontAwesomeIcon
               className='intro-svg'
               icon={faAddressCard}
-              onMouseLeave={reverseSpin}
             ></FontAwesomeIcon>
+            <span className='menu-text flex-row align-center justify-center'>Skills</span>
           </NavLink>
         </span>
         <span className='portfolio'>
@@ -48,8 +44,8 @@ export default function Home() {
             <FontAwesomeIcon
               className='intro-svg'
               icon={faBriefcase}
-              onMouseLeave={reverseSpin}
             ></FontAwesomeIcon>
+            <span className='menu-text flex-row align-center justify-center'>Projects</span>
           </NavLink>
         </span>
         <span className='contact'>
@@ -57,8 +53,8 @@ export default function Home() {
             <FontAwesomeIcon
               className='intro-svg'
               icon={faEnvelope}
-              onMouseLeave={reverseSpin}
             ></FontAwesomeIcon>
+            <span className='menu-text flex-row align-center justify-center'>Contact</span>
           </NavLink>
         </span>
         <div className='intro-symbol angle'>
