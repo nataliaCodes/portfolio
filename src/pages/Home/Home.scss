@@ -1,5 +1,5 @@
 .intro-text {
-  margin-left: 2em;
+  margin-left: 5.4rem;
 
   div {
     margin: 1em 0;
@@ -88,7 +88,7 @@
     opacity: 0;
     position: relative;
     top: -10rem;
-    font-size: xx-large;
+    font-size: 2.3rem;
     font-weight: bold;
     color: $darkGray;
     text-align: center;
@@ -96,6 +96,7 @@
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
+    font-family: "Tilt Neon";
 
     &:hover {
       opacity: 1;
@@ -135,6 +136,7 @@
 
   .intro-symbol {
     font-size: 3em;
+    font-weight: bold;
   }
 
   .angle {
@@ -157,7 +159,7 @@
 
   .func {
     position: relative;
-    left: 12em;
+    left: 10em;
     top: 3em;
   }
 

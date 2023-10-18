@@ -4,6 +4,9 @@ import reportWebVitals from './reportWebVitals';
 import './index.scss';
 import App from './App';
 import { BrowserRouter } from 'react-router-dom';
+import './fonts/Chakra_Petch/ChakraPetch-Bold.ttf';
+import './fonts/Tilt_Neon/TiltNeon-Regular-VariableFont_XROT,YROT.ttf';
+import './fonts/Quicksand/Quicksand-VariableFont_wght.ttf';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(

@@ -67,7 +67,7 @@ export default function Home() {
           <p>{'[...]'}</p>
         </div>
         <div className='intro-symbol func'>
-          <p>{'func()'}</p>
+          <p>{'function()'}</p>
         </div>
         <div className='intro-symbol arrow'>
           <p>{'=>'}</p>

@@ -37,13 +37,13 @@
       bottom: 10px;
       display: inline-block;
       opacity: 50%;
-      font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+      font-family: 'Quicksand';
     }
   }
 
   textarea {
     resize: vertical;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: 'Quicksand';
     height: 5rem !important;
   }
 
@@ -58,6 +58,7 @@
     border-radius: 2rem;
     margin-top: 1rem;
     color: $lightBlue;
+    font-family: 'Quicksand';
   }
 
   p {
