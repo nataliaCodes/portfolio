@@ -5,6 +5,8 @@ import CarouselIndicators from '../../components/CarouselIndicators/CarouselIndi
 
 import Echo from '../../img/screenshots/Echo-moments.png';
 import uPick from '../../img/screenshots/uPick-home.png';
+import Scheduler from '../../img/screenshots/Scheduler.png';
+import Tweeter from '../../img/screenshots/Tweeter.png';
 
 export default function Portfolio() {
   const slides = [
@@ -18,30 +20,24 @@ export default function Portfolio() {
     },
     {
       title: 'uPick - smart ToDo list',
-      description: 'a full-stack app that works with external APIs to find information about movies, restaurants, books and products. It automatically adds the item to the correct list based on keywords. The user can later mark the item as done or edit to change name and category.',
+      description: 'A full-stack app that works with external APIs to find information about movies, restaurants, books and products. It automatically adds the item to the correct list based on keywords. The user can later mark the item as done or edit to change name and category.',
       stack: 'Express, PostgreSQL, EJS, SASS',
-      image: uPick
+      image: uPick,
+      repo: 'https://github.com/nataliaCodes/uPick'
     },
     {
-      title: 'Mimisa Rocks',
-      description: 'A piece of heaven',
-      stack: 'JavaScript',
-      image:
-        'https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+      title: 'Scheduler',
+      description: 'A single page application that allows students to book, edit or cancel interviews during weekdays.',
+      stack: 'ReactJS, Express, PostgreSQL, StoryBook, Jest, Cypress',
+      image: Scheduler,
+      repo: 'https://github.com/nataliaCodes/scheduler'
     },
     {
-      title: 'Four',
-      description: 'A piece of heaven',
-      stack: 'JavaScript',
-      image:
-        'https://images.unsplash.com/photo-1566522650166-bd8b3e3a2b4b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
-    },
-    {
-      title: 'Five',
-      description: 'A piece of heaven',
-      stack: 'JavaScript',
-      image:
-        'https://images.unsplash.com/photo-1579130781921-76e18892b57b?ixlib=rb-1.2.1&q=80&fm=jpg&crop=entropy&cs=tinysrgb&w=800&fit=max&ixid=eyJhcHBfaWQiOjE0NTg5fQ'
+      title: 'Tweeter',
+      description: 'Single-page Twitter clone that allows posting to a message board.',
+      stack: 'JavaScript, jQuery, AJAX, HTML, CSS',
+      image: Tweeter,
+      repo: 'https://github.com/nataliaCodes/tweeter'
     }
   ];
 

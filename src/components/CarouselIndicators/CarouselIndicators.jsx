@@ -6,6 +6,7 @@ export default function CarouselIndicators({ slides, currentIndex, switchIndex }
         <button 
           className={`carousel-indicator${currentIndex === i ? ' active' : ''}`}
           onClick={() => switchIndex(i)}
+          key={i}
         ></button>
       ))}
     </div>

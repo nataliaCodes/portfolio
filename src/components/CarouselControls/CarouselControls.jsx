@@ -5,7 +5,7 @@ import { faChevronLeft, faChevronRight } from "@fortawesome/free-solid-svg-icons
 
 export default function CarouselControls({ prev, next }) {
   return (
-    <div>
+    <div className="carousel-controls">
       <button className="carousel-control left" onClick={prev}>
         <FontAwesomeIcon icon={faChevronLeft} />
       </button>
