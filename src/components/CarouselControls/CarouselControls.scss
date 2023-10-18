@@ -1,13 +1,14 @@
+@import '../../styles/Colors.scss';
+
 .carousel-control {
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: transparent;
   border: none;
   display: inline-block;
   position: absolute;
-  height: 50px;
-  width: 70px;
   top: calc(50% - 25px);
-  color: #f3f3f3;
+  color: $lightBlue;
   cursor: pointer;
+  font-size: 4rem;
 }
 
 .left {
