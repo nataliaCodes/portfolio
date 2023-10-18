@@ -5,7 +5,7 @@ import { faChevronRight } from "@fortawesome/free-solid-svg-icons";
 export default function Header(props) {
 
   return (
-    <header className="bold" onClick={() => props.resetRoute('/')}>
+    <header className="bold" >
       <FontAwesomeIcon icon={faChevronRight} />
       <span className='blinking'>_</span>
       <Link to="/" className="logo">
