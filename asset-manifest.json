@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9d4ef5e4.css",
-    "main.js": "/portfolio/static/js/main.e787d11e.js",
+    "main.css": "/portfolio/static/css/main.ad734753.css",
+    "main.js": "/portfolio/static/js/main.a43f536c.js",
     "static/js/787.dc9ee2bf.chunk.js": "/portfolio/static/js/787.dc9ee2bf.chunk.js",
     "static/media/TiltNeon-Regular-VariableFont_XROT,YROT.ttf": "/portfolio/static/media/TiltNeon-Regular-VariableFont_XROT,YROT.a97634d0d51330cd1691.ttf",
     "static/media/Nat_cartoon_blue.jpg": "/portfolio/static/media/Nat_cartoon_blue.ebb8a3298bb59050a133.jpg",
@@ -33,12 +33,12 @@
     "static/media/css3.svg": "/portfolio/static/media/css3.98daf49e4be2b88d6c17fcd8f30c17d9.svg",
     "static/media/html5.svg": "/portfolio/static/media/html5.74577817dde8fee285d3c8af53312ca6.svg",
     "static/media/angular.svg": "/portfolio/static/media/angular.71f1cdc4696e97187e1897cb8fbcfe58.svg",
-    "main.9d4ef5e4.css.map": "/portfolio/static/css/main.9d4ef5e4.css.map",
-    "main.e787d11e.js.map": "/portfolio/static/js/main.e787d11e.js.map",
+    "main.ad734753.css.map": "/portfolio/static/css/main.ad734753.css.map",
+    "main.a43f536c.js.map": "/portfolio/static/js/main.a43f536c.js.map",
     "787.dc9ee2bf.chunk.js.map": "/portfolio/static/js/787.dc9ee2bf.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.9d4ef5e4.css",
-    "static/js/main.e787d11e.js"
+    "static/css/main.ad734753.css",
+    "static/js/main.a43f536c.js"
   ]
 }
