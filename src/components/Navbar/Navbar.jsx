@@ -10,9 +10,9 @@ export default function Navbar() {
 
   return (
     //hide navbar on home and projects pages
-    <nav className={(route === '/' || route === '/portfolio') ? 'hidden navigation' : 'navigation'}>
+    <nav className={(route === '/' || route === '/portfolio' || route === '/projects') ? 'hidden navigation' : 'navigation'}>
       <ul className="menu largest-text flex-column">
-        <NavLink exact="true" to="/">
+        <NavLink exact="true" to="/portfolio">
           <li><FontAwesomeIcon icon={faHouseUser}></FontAwesomeIcon>&nbsp;</li>
         </NavLink>
         <NavLink exact="true" to="/about">
@@ -29,8 +29,8 @@ export default function Navbar() {
             <li><FontAwesomeIcon icon={faAddressCard}></FontAwesomeIcon>&nbsp;</li>
           }
         </NavLink>
-        <NavLink exact="true" to="/portfolio">
-          {route === '/portfolio' ?
+        <NavLink exact="true" to="/projects">
+          {route === '/projects' ?
             <li>Projects&nbsp;</li>
             :
             <li><FontAwesomeIcon icon={faBriefcase}></FontAwesomeIcon>&nbsp;</li>

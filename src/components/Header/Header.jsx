@@ -8,7 +8,7 @@ export default function Header(props) {
     <header className="bold" >
       <FontAwesomeIcon icon={faChevronRight} />
       <span className='blinking'>_</span>
-      <Link to="/" className="logo">
+      <Link to="/portfolio" className="logo">
         &nbsp;nataliaCodes
       </Link>
     </header>
