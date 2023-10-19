@@ -1,8 +1,11 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+
+//carousel components
 import Slide from '../../components/Slide/Slide';
 import CarouselControls from '../../components/CarouselControls/CarouselControls';
 import CarouselIndicators from '../../components/CarouselIndicators/CarouselIndicators';
 
+//slide images
 import Echo from '../../img/screenshots/Echo-moments.png';
 import uPick from '../../img/screenshots/uPick-home.png';
 import Scheduler from '../../img/screenshots/Scheduler.png';
@@ -41,20 +44,22 @@ export default function Portfolio() {
     }
   ];
 
-  const [current, setCurrent] = useState(0);
+  const [currentSlide, setCurrentSlide] = useState(0);
 
+  //for controls
   const prev = () => {
-    const index = current > 0 ? current - 1 : slides.length - 1;
-    setCurrent(index);
+    const index = currentSlide > 0 ? currentSlide - 1 : slides.length - 1;
+    setCurrentSlide(index);
   }
 
   const next = () => {
-    const index = current < slides.length - 1 ? current + 1 : 0;
-    setCurrent(index);
+    const index = currentSlide < slides.length - 1 ? currentSlide + 1 : 0;
+    setCurrentSlide(index);
   }
 
+  //for indicators
   const switchIndex = (index) => {
-    setCurrent(index);
+    setCurrentSlide(index);
   }
 
   return (
@@ -62,13 +67,13 @@ export default function Portfolio() {
       <div className="carousel">
         <div
           className="carousel-inner"
-          style={{ transform: `translateX(${-current * 100}%)` }}
+          style={{ transform: `translateX(${-currentSlide * 100}%)` }}
         >
           {[...slides].map((slide, i) => (
             <Slide slide={slide} slideIndex={i} key={i} />
           ))}
         </div>
-        <CarouselIndicators slides={slides} currentIndex={current} switchIndex={switchIndex} />
+        <CarouselIndicators slides={slides} currentIndex={currentSlide} switchIndex={switchIndex} />
         <CarouselControls prev={prev} next={next} />
       </div>
     </div>

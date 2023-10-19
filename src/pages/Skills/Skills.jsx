@@ -1,3 +1,4 @@
+//logos
 import js from '../../img/javascript.svg';
 import ts from '../../img/typescript.svg';
 import sql from '../../img/sql.png';
@@ -23,6 +24,7 @@ import eslint from '../../img/eslint.svg';
 export default function Skills() {
   const langLogos = [js, ts, sql, html, css];
   const languages = ['JavaScript', 'TypeScript', 'SQL', 'HTML5', 'CSS3'];
+  //generate languages row
   const langContent = langLogos.map(((logo, i) => {
     return (
       <span key={i} className='flex-column align-center logos'>
@@ -34,6 +36,7 @@ export default function Skills() {
 
   const libLogos = [angular, react, node, express, ejs, primeng, mui, bootstrap, sass, psql];
   const libraries = ['Angular', 'React', 'NodeJS', 'Express', 'EJS', 'PrimeNG', 'Material-UI', 'Bootstrap', 'SASS', 'PostgreSQL'];
+  //generate libraries row
   const libContent = libLogos.map((logo, i) => {
     return (
       <span key={i} className='flex-column align-center logos'>
@@ -45,6 +48,7 @@ export default function Skills() {
 
   const testLogos = [mocha, storybook, jest, cypress, jasmine, eslint];
   const testLibs = ['Mocha&Chai', 'Storybook', 'Jest', 'Cypress', 'Jasmine', 'ESlint'];
+  //generate testing libraries row
   const testContent = testLogos.map((logo, i) => {
     return (
       <span key={i} className='flex-column align-center logos'>

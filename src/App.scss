@@ -37,7 +37,6 @@ ul {
   font-size: x-large;
 }
 
-
 .xx-large-text {
   font-size: xx-large;
 }
@@ -49,6 +48,7 @@ ul {
 .bold {
   font-weight: bold;
 }
+
 //
 
 //general flex styles
@@ -73,6 +73,7 @@ ul {
 .justify-center {
   justify-content: center;
 }
+
 //
 
 .hidden {
@@ -95,14 +96,14 @@ ul {
   margin: auto;
   margin-top: 5vh;
   overflow: hidden;
-  
+
   .main-content {
     width: 100%;
-    
+
     .page-content {
       justify-content: space-between;
       align-items: center;
-    
+
       width: 90%;
     }
   }

@@ -3,11 +3,13 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHouseUser, faPersonCircleQuestion, faAddressCard, faBriefcase, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Navbar() {
+
+  //extract current route
   const location = useLocation();
   const route = location.pathname;
-  console.log('route :', route);
 
   return (
+    //hide navbar on home and projects pages
     <nav className={(route === '/' || route === '/portfolio') ? 'hidden navigation' : 'navigation'}>
       <ul className="menu largest-text flex-column">
         <NavLink exact="true" to="/">
