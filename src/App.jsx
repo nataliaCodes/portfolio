@@ -39,7 +39,7 @@ export default function App() {
       <Header />
       <div className='main-content flex-row'>
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/resume" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/skills" element={<Skills />} />
           <Route path="/portfolio" element={<Portfolio />} />

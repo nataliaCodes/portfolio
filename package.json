@@ -1,7 +1,7 @@
 {
   "name": "resume",
   "version": "2.0",
-  "homepage": "https://nataliaCodes.github.io/",
+  "homepage": "https://nataliaCodes.github.io/resume",
   "private": true,
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
