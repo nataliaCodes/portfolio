@@ -1,3 +1,5 @@
+@import '../../styles/Colors.scss';
+
 .contact-container {
   justify-content: space-around;
 
@@ -8,43 +10,60 @@
   border-radius: 4px;
   padding: 5rem;
 
-  .transparent-input {
-    height: 3rem;
-    background: transparent;
-    border: none;
-    border-bottom: 2px solid $lightBlue;
-    color: $lightBlue;
-    margin: 1rem 0;
+  .input-group {
+    display: flex;
+    flex-direction: column;
 
-    &:focus-visible {
-      outline: none;
-    }
+    height: 6rem;
 
-    // override autofill styling
-    &:-webkit-autofill,
-    &:-webkit-autofill:hover,
-    &:-webkit-autofill:focus,
-    &:-webkit-autofill:active {
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    //override placeholder styling
-    &::placeholder {
-      font-size: x-large;
+    .transparent-input {
+      height: 3rem;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid $lightBlue;
       color: $lightBlue;
-      position: absolute;
-      bottom: 10px;
-      display: inline-block;
-      opacity: 50%;
-      font-family: 'Quicksand';
+      margin-top: 1rem;
+  
+      &:focus-visible {
+        outline: none;
+      }
+  
+      // override autofill styling
+      &:-webkit-autofill,
+      &:-webkit-autofill:hover,
+      &:-webkit-autofill:focus,
+      &:-webkit-autofill:active {
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+  
+      //override placeholder styling
+      &::placeholder {
+        font-size: x-large;
+        color: $lightBlue;
+        position: absolute;
+        bottom: 10px;
+        display: inline-block;
+        opacity: 50%;
+        font-family: 'Quicksand';
+      }
     }
-  }
 
-  textarea {
-    resize: vertical;
-    font-family: 'Quicksand';
-    height: 5rem !important;
+    textarea {
+      resize: vertical;
+      font-family: 'Quicksand';
+      height: 5rem !important;
+    }
+
+    small {
+      color: $accentYellow;
+      font-weight: bold;
+      font-size: medium;
+    }
+    
+      .empty-field {
+        border-bottom: 2px solid $accentYellow;
+      }
   }
 
   button {
