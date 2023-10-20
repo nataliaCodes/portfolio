@@ -40,7 +40,7 @@ export default function Home() {
           </NavLink>
         </span>
         <span className='portfolio'>
-          <NavLink exact="true" to="/portfolio">
+          <NavLink exact="true" to="/projects">
             <FontAwesomeIcon
               className='intro-svg'
               icon={faBriefcase}
