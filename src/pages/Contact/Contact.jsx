@@ -35,24 +35,23 @@ export default function Contact() {
       }
 
     } else {
-      console.log('ready to send');
-      // emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
-      //   .then(
-      //     (result) => {
-      //       //sent without errors
-      //       if (result.text === 'OK') {
-      //         setSentOK(true);
-      //         e.target.reset();
-      //       } else { //other cases (?)
-      //         console.log('not sent:', result.text);
-      //         setSentOK(false);
-      //         setHaveErr(true);
-      //       }
-      //     }, (error) => { //not sent with error
-      //       console.log('error:', error.text);
-      //       setSentOK(false);
-      //       setHaveErr(true);
-      //     });
+      emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
+        .then(
+          (result) => {
+            //sent without errors
+            if (result.text === 'OK') {
+              setSentOK(true);
+              e.target.reset();
+            } else { //other cases (?)
+              console.log('not sent:', result.text);
+              setSentOK(false);
+              setHaveErr(true);
+            }
+          }, (error) => { //not sent with error
+            console.log('error:', error.text);
+            setSentOK(false);
+            setHaveErr(true);
+          });
     }
   };
 
