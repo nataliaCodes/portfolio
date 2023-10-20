@@ -12,15 +12,13 @@ export default function Contact() {
   function sendEmail(e) {
     e.preventDefault();
 
+    //extract form content
     const formElements = e.target.elements;
     const name = formElements.user_name.value;
-    console.log('name :', name);
     const email = formElements.user_email.value;
-    console.log('email :', email);
     const message = formElements.message.value;
-    console.log('message :', message);
 
-
+    //set state if form submitted with no content
     if (!name || !email || !message) {
       if (!name) {
         setNoName(true);
@@ -34,7 +32,7 @@ export default function Contact() {
         setNoMessage(true);
       }
 
-    } else {
+    } else {// form has content
       emailjs.sendForm(process.env.REACT_APP_SERVICE_ID, process.env.REACT_APP_TEMPLATE_ID, form.current, process.env.REACT_APP_PUBLIC_KEY)
         .then(
           (result) => {
