@@ -4,6 +4,7 @@ import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
 import Portfolio from "./pages/Projects/Projects";
+import FourOhFour from './pages/404/404';
 import Contact from "./pages/Contact/Contact";
 import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
@@ -45,6 +46,7 @@ export default function App() {
           <Route path="/skills" element={<Skills />} />
           <Route path="/projects" element={<Portfolio />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path='*' element={<FourOhFour />}/>
         </Routes>
         <Navbar />
       </div>

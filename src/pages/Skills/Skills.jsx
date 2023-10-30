@@ -1,25 +1,25 @@
 //logos
-import js from '../../img/javascript.svg';
-import ts from '../../img/typescript.svg';
-import sql from '../../img/sql.png';
-import html from '../../img/html5.svg';
-import css from '../../img/css3.svg';
-import angular from '../../img/angular.svg';
-import react from '../../img/react.svg';
-import node from '../../img/nodedotjs.svg';
-import express from '../../img/express.svg';
-import ejs from '../../img/ejs.png';
-import primeng from '../../img/primeng.png';
-import mui from '../../img/mui.svg';
-import bootstrap from '../../img/bootstrap.svg';
-import sass from '../../img/sass.svg';
-import psql from '../../img/postgresql.svg';
-import mocha from '../../img/mocha.svg';
-import storybook from '../../img/storybook.svg';
-import jest from '../../img/jest.svg';
-import cypress from '../../img/cypress.svg';
-import jasmine from '../../img/jasmine.svg';
-import eslint from '../../img/eslint.svg';
+import js from '../../img/logos/javascript.svg';
+import ts from '../../img/logos/typescript.svg';
+import sql from '../../img/logos/sql.png';
+import html from '../../img/logos/html5.svg';
+import css from '../../img/logos/css3.svg';
+import angular from '../../img/logos/angular.svg';
+import react from '../../img/logos/react.svg';
+import node from '../../img/logos/nodedotjs.svg';
+import express from '../../img/logos/express.svg';
+import ejs from '../../img/logos/ejs.png';
+import primeng from '../../img/logos/primeng.png';
+import mui from '../../img/logos/mui.svg';
+import bootstrap from '../../img/logos/bootstrap.svg';
+import sass from '../../img/logos/sass.svg';
+import psql from '../../img/logos/postgresql.svg';
+import mocha from '../../img/logos/mocha.svg';
+import storybook from '../../img/logos/storybook.svg';
+import jest from '../../img/logos/jest.svg';
+import cypress from '../../img/logos/cypress.svg';
+import jasmine from '../../img/logos/jasmine.svg';
+import eslint from '../../img/logos/eslint.svg';
 
 export default function Skills() {
   const langLogos = [js, ts, sql, html, css];

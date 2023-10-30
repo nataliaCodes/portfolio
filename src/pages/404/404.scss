@@ -1,0 +1,19 @@
+.not-found-container {
+  justify-content: space-between;
+  align-items: center;
+
+  width: 60%;
+  height: 45vh;
+  margin: auto;
+  border: 5px solid $lightBlue;
+  border-radius: 4px;
+  padding: 5rem;
+
+  img {
+    height: 100%;
+  }
+
+  .not-found-text {
+    text-align: center;
+  }
+}
