@@ -3,7 +3,7 @@ export default function Slide({ slide, slideIndex }) {
   return (
     <div className={`carousel-item ${slideIndex % 2 !== 0 ? 'reverse' : ''}`}>
       <img src={slide.image} alt={slide.title} />
-      <div className="slide-text">
+      <div className={`slide-text ${slide.class}`}>
         <h2>{slide.title}</h2>
         <p className="x-large-text">{slide.description}</p>
         <p className="x-large-text"><span className="bold">Stack: </span>{slide.stack}</p>

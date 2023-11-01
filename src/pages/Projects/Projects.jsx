@@ -14,6 +14,7 @@ import Tweeter from '../../img/screenshots/Tweeter.png';
 export default function Portfolio() {
   const slides = [
     {
+      class: 'echo',
       title: 'Echo - replay your moments',
       description: 'A full-stack web app designed to allow its users to search for and save YouTube videos to their profile and save specific time snippets, which they can later play in a loop.',
       stack: 'ReactJS, Express, PostgreSQL, SASS, Bootstrap',
@@ -22,13 +23,15 @@ export default function Portfolio() {
       repo: 'https://github.com/nataliaCodes/echo'
     },
     {
+      class: 'uPick',
       title: 'uPick - smart ToDo list',
-      description: 'A full-stack app that works with external APIs to find information about movies, restaurants, books and products. It automatically adds the item to the correct list based on keywords. The user can later mark the item as done or edit to change name and category.',
+      description: 'A full-stack app working with external APIs to find information about movies, restaurants, books and products. It automatically adds the item to the correct list based on keywords. The user can later mark the item as done or edit to change name and category.',
       stack: 'Express, PostgreSQL, EJS, SASS',
       image: uPick,
       repo: 'https://github.com/nataliaCodes/uPick'
     },
     {
+      class: 'scheduler',
       title: 'Scheduler',
       description: 'A single page application that allows students to book, edit or cancel interviews during weekdays.',
       stack: 'ReactJS, Express, PostgreSQL, StoryBook, Jest, Cypress',
@@ -36,6 +39,7 @@ export default function Portfolio() {
       repo: 'https://github.com/nataliaCodes/scheduler'
     },
     {
+      class: 'tweeter',
       title: 'Tweeter',
       description: 'Single-page Twitter clone that allows posting to a message board.',
       stack: 'JavaScript, jQuery, AJAX, HTML, CSS',
@@ -63,7 +67,7 @@ export default function Portfolio() {
   }
 
   return (
-    <div className="container">
+    <div className="page-content container">
       <div className="carousel">
         <div
           className="carousel-inner"
