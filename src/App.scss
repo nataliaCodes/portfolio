@@ -109,3 +109,111 @@ ul {
     }
   }
 }
+
+// average desktop
+@media only screen 
+and (max-width: 1440px) {
+  .intro-text {
+    font-size: 3rem;
+  }
+
+  .intro-imgs {
+    .skills {
+      right: 10%;
+    }
+
+    .func {
+      right: 20%;
+    }
+
+    .arrow {
+      left: 62%
+    }
+  }
+}
+
+// average laptop
+@media only screen 
+and (max-width: 1366px) {
+  .intro-text {
+    font-size: 2.5rem;
+  }
+
+  .intro-imgs {
+    .skills {
+      right: 6%;
+    }
+
+    .portfolio {
+      left: 48.5%;
+      bottom: -6%;
+    }
+
+    .contact {
+      bottom: 0%;
+      right: 8.5%;
+    }
+
+    .angle {
+      right: 30%;
+    }
+
+    .func {
+      right: 20%;
+    }
+
+    .arrow {
+      left: 53%;
+      bottom: 32%;
+    }
+  }
+}
+
+// tablets
+@media only screen 
+and (max-width: 1280px) {
+  .intro-text {
+    font-size: 2.5rem;
+  }
+
+  .intro-imgs {
+    .angle,
+    .curly,
+    .square,
+    .func,
+    .arrow {
+      display: none;
+    }
+  }
+}
+
+// large mobile
+@media only screen 
+and (max-width: 810px) {
+  .main-content {
+    display: flex;
+    flex-direction: column-reverse;
+
+    .intro-text {
+      font-size: 2.5rem;
+    }
+  
+    .intro-imgs {
+      .intro-img {
+        left: 40%;
+      }
+
+      .about,
+      .skills,
+      .portfolio,
+      .contact,
+      .angle,
+      .curly,
+      .square,
+      .func,
+      .arrow {
+        display: none;
+      }
+    }
+  }
+}
