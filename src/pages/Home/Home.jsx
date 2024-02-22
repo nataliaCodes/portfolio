@@ -7,12 +7,14 @@ export default function Home() {
       <div className="intro-text largest-text bold">
         <div>Hi, I'm Natalia</div>
         <div className='changing-text'>
-          <span>Web developer</span>
-          <span>Team player</span>
-          <span>Tree hugger</span>
-          <span>Problem solver</span>
-          <span>Cat lover</span>
-          <span>Fast learner</span>
+          <ul>
+            <li>Web developer</li>
+            <li>Team player</li>
+            <li>Tree hugger</li>
+            <li>Problem solver</li>
+            <li>Cat lover</li>
+            <li>Fast learner</li>
+          </ul>
         </div>
         <div>Welcome to my site!</div>
       </div>
