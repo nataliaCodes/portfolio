@@ -6,7 +6,7 @@ import Skills from "./pages/Skills/Skills";
 import Portfolio from "./pages/Projects/Projects";
 import FourOhFour from './pages/404/404';
 import Contact from "./pages/Contact/Contact";
-import Navbar from './components/Navbar/Navbar';
+// import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -48,7 +48,7 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path='*' element={<FourOhFour />}/>
         </Routes>
-        <Navbar />
+        {/* <Navbar /> */}
       </div>
       <Footer />
     </div>

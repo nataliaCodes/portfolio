@@ -1,12 +1,12 @@
 import portrait from '../../img/Nat_cartoon_blue.jpg';
-import { NavLink } from "react-router-dom";
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faPersonCircleQuestion, faAddressCard, faBriefcase, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+// import { NavLink } from "react-router-dom";
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faPersonCircleQuestion, faAddressCard, faBriefcase, faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 export default function Home() {
 
   return (
-    <div className="page-content flex-row">
+    <div className="page-content flex-row blue-bckgrd">
       <div className="intro-text largest-text bold">
         <div>Hi, I'm Natalia</div>
         <div className='changing-text'>
@@ -19,8 +19,8 @@ export default function Home() {
         </div>
         <div>Welcome to my site!</div>
       </div>
-      <div className="intro-imgs flex-row">
         <img className='intro-img' src={portrait} alt="cartoon portrait" />
+      {/* <div className="intro-imgs flex-row">
         <span className='about'>
           <NavLink exact="true" to="/about">
             <FontAwesomeIcon
@@ -72,7 +72,7 @@ export default function Home() {
         <div className='intro-symbol arrow'>
           <p>{'=>'}</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

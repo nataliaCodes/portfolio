@@ -13,16 +13,16 @@
 @import './components/CarouselIndicators/CarouselIndicators.scss';
 @import './pages/404/404.scss';
 
-body {
-  background-color: $darkGray;
-  background-image: url(./img/dark-mosaic.png);
-  color: $lightBlue;
-}
+// body {
+//   background-color: $darkGray;
+//   background-image: url(./img/dark-mosaic.png);
+//   color: $lightBlue;
+// }
 
 a,
 a:visited {
   text-decoration: none;
-  color: $lightBlue;
+  color: $mediumBlue;
 }
 
 ul {
@@ -75,6 +75,18 @@ ul {
   justify-content: center;
 }
 
+// general color styles
+.blue-bckgrd {
+  background-color: $lightBlue;
+}
+
+.yellow-bckgrd {
+  background-color: $lightYellow;
+}
+
+.dark-bckgrd {
+  background-color: $darkBlue;
+}
 //
 
 .hidden {
@@ -93,26 +105,23 @@ ul {
   justify-content: space-between;
 
   width: 95vw;
-  height: 90vh;
+  height: 95vh;
   margin: auto;
-  margin-top: 5vh;
+  margin-top: 2vh;
   overflow: hidden;
 
   .main-content {
     width: 100%;
+    height: 80%;
 
     .page-content {
-      justify-content: space-between;
-      align-items: center;
-
-      width: 90%;
+      width: 100%;
     }
   }
 }
 
 // average desktop
-@media only screen 
-and (max-width: 1440px) {
+@media only screen and (max-width: 1440px) {
   .intro-text {
     font-size: 3rem;
   }
@@ -133,8 +142,7 @@ and (max-width: 1440px) {
 }
 
 // average laptop
-@media only screen 
-and (max-width: 1366px) {
+@media only screen and (max-width: 1366px) {
   .intro-text {
     font-size: 2.5rem;
   }
@@ -170,13 +178,13 @@ and (max-width: 1366px) {
 }
 
 // tablets
-@media only screen 
-and (max-width: 1280px) {
+@media only screen and (max-width: 1280px) {
   .intro-text {
     font-size: 2.5rem;
   }
 
   .intro-imgs {
+
     .angle,
     .curly,
     .square,
@@ -188,8 +196,7 @@ and (max-width: 1280px) {
 }
 
 // large mobile
-@media only screen 
-and (max-width: 810px) {
+@media only screen and (max-width: 810px) {
   .main-content {
     display: flex;
     flex-direction: column-reverse;
@@ -197,7 +204,7 @@ and (max-width: 810px) {
     .intro-text {
       font-size: 2.5rem;
     }
-  
+
     .intro-imgs {
       .intro-img {
         left: 40%;

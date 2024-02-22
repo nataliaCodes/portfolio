@@ -9,7 +9,7 @@ export default function Header(props) {
       <FontAwesomeIcon icon={faChevronRight} />
       <span className='blinking'>_</span>
       <Link to="/portfolio" className="logo">
-        &nbsp;nataliaCodes
+        &nbsp;<span style={{color: '#FCD151'}}>natalia</span>Codes
       </Link>
     </header>
   );
