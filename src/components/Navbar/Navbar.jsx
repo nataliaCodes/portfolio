@@ -40,13 +40,13 @@ export default function Navbar() {
             <li>Contact</li>
           </NavLink>
         </ul>
-      :
-        <div className="hamburger flex-column align-center justify-center">
+        :
+        <div className="hamburger flex-column center-xy">
           <div className="burger-line"></div>
           <div className="burger-line"></div>
           <div className="burger-line"></div>
         </div>
-    }
+      }
     </nav>
   );
 }

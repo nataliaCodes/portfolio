@@ -69,6 +69,11 @@ ul {
   justify-content: center;
 }
 
+.center-xy {
+  align-items: center;
+  justify-content: center;
+}
+
 // general color styles
 .blue-bckgrd {
   background-color: $lightBlue;
@@ -114,6 +119,17 @@ ul {
     opacity: 30%;
   }
 
+  .hamburger-bckgrd {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 6rem;
+    height: 6rem;
+    background-color: $darkYellow;
+    opacity: 30%;
+  
+  }
+
   .footer-bckgrd {
     position: absolute;
     bottom: -14rem;
@@ -140,12 +156,20 @@ ul {
   .intro-text {
     font-size: 3rem;
   }
+
+  .App .hamburger-bckgrd {
+    display: none;
+  }
 }
 
 // average laptop
 @media only screen and (max-width: 1366px) {
   .intro-text {
     font-size: 2.5rem;
+  }
+
+  .App .hamburger-bckgrd {
+    display: none;
   }
 }
 
@@ -165,6 +189,10 @@ ul {
     font-size: 2.5rem;
   }
 
+  .App .hamburger-bckgrd {
+    display: none;
+  }
+
   .App .menu-bckgrd {
     width: 28rem;
     height: 8rem;
@@ -182,9 +210,9 @@ ul {
     display: none;
   }
 
-  // nav.narrow {
-  //   display: contents;
-  // }
+  .App .hamburger-bckgrd {
+    display: block;
+  }
 
   header {
     .logo {
