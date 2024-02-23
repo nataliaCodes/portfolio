@@ -6,7 +6,6 @@ import Skills from "./pages/Skills/Skills";
 import Portfolio from "./pages/Projects/Projects";
 import FourOhFour from './pages/404/404';
 import Contact from "./pages/Contact/Contact";
-// import Navbar from './components/Navbar/Navbar';
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
@@ -35,8 +34,12 @@ export default function App() {
   //   }
   // };
 
+  const width = window.innerWidth;
+  console.log('width :', width);
+
   return (
     <div className="App flex-column">
+      <div className='menu-bckgrd'></div>
       <Header />
       <div className='main-content flex-row'>
         <Routes>
@@ -48,9 +51,9 @@ export default function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path='*' element={<FourOhFour />}/>
         </Routes>
-        {/* <Navbar /> */}
       </div>
       <Footer />
+      <div className='footer-bckgrd'></div>
     </div>
   );
 };

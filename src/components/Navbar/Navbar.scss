@@ -1,23 +1,37 @@
-.navigation {
-  align-self: center;
+.menu {
+  justify-content: space-between;
 
-  width: 10%;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
+  font-family: 'Tilt Neon';
+  font-size: 2rem;
+  margin: 0;
 
-  .menu {
-    align-items: flex-end;
-    justify-content: space-between;
-
-    height: 50vh;
-    border-right: 5px solid;
-    font-family: 'Tilt Neon';
-
-    .active {
-      color: $accentYellow;
-      font-size: 2.5rem;
-      border-right: 5px solid;
-    }
+  a.active, a:visited.active  {
+    border-bottom: 5px solid $darkBlue;
   }
+
+  a, a:visited {
+    color: $darkBlue;
+  }
+
+  li {
+    padding: 0 .5rem;
+  }
+}
+
+.hamburger {
+  width: 5rem;
+  height: 5rem;
+  background-color: $darkYellow;
+
+  .burger-line {
+    width: 2rem;
+    height: .32rem;
+    border-radius: 10px;
+    background-color: $darkBlue;
+    margin: .15rem 0;
+  }
+}
+
+nav {
+  justify-self: center;
 }
