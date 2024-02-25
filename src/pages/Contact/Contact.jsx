@@ -54,7 +54,7 @@ export default function Contact() {
   };
 
   return (
-    <div className="page-content">
+    <div className="page-content contact">
       {haveErr === false ? (
         // render when no error
         sentOK === false ?

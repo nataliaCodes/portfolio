@@ -127,7 +127,7 @@ ul {
     height: 6rem;
     background-color: $darkYellow;
     opacity: 30%;
-  
+    display: none;
   }
 
   .footer-bckgrd {
@@ -156,10 +156,6 @@ ul {
   .intro-text {
     font-size: 3rem;
   }
-
-  .App .hamburger-bckgrd {
-    display: none;
-  }
 }
 
 // average laptop
@@ -167,53 +163,49 @@ ul {
   .intro-text {
     font-size: 2.5rem;
   }
-
-  .App .hamburger-bckgrd {
-    display: none;
-  }
 }
 
 // tablets
 @media only screen and (max-width: 1280px) {
-  header {
-    .logo {
+  .App {
+    header {
+      .logo {
+        font-size: 2.5rem;
+      }
+    
+      .menu {
+        font-size: 1.5rem;
+      }
+    } 
+  
+    .intro-text {
       font-size: 2.5rem;
     }
   
-    .menu {
-      font-size: 1.5rem;
+    .menu-bckgrd {
+      width: 28rem;
+      height: 8rem;
     }
-  } 
-
-  .intro-text {
-    font-size: 2.5rem;
-  }
-
-  .App .hamburger-bckgrd {
-    display: none;
-  }
-
-  .App .menu-bckgrd {
-    width: 28rem;
-    height: 8rem;
-  }
-
-  .App .footer-bckgrd {
-    width: 23rem;
-    height: 23rem;
+  
+    .footer-bckgrd {
+      width: 23rem;
+      height: 23rem;
+    }
   }
 }
 
 // large mobile
 @media only screen and (max-width: 810px) {
-  .App .menu-bckgrd {
-    display: none;
+  .App {
+    .menu-bckgrd {
+      display: none;
+    }
+  
+    .hamburger-bckgrd {
+      display: block;
+    }
   }
-
-  .App .hamburger-bckgrd {
-    display: block;
-  }
-
+  
   header {
     .logo {
       font-size: 2.5rem;

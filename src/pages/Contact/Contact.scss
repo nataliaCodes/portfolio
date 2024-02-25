@@ -1,12 +1,16 @@
 @import '../../styles/Colors.scss';
 
+div.contact {
+  align-self: center;
+}
+
 .contact-container {
   justify-content: space-around;
 
   width: 60%;
   height: 45vh;
   margin: auto;
-  border: 5px solid $lightBlue;
+  border: 5px solid $darkBlue;
   border-radius: 4px;
   padding: 5rem;
 
@@ -20,8 +24,8 @@
       height: 3rem;
       background: transparent;
       border: none;
-      border-bottom: 2px solid $lightBlue;
-      color: $lightBlue;
+      border-bottom: 2px solid $darkBlue;
+      color: $darkBlue;
       margin-top: 1rem;
   
       &:focus-visible {
@@ -34,13 +38,13 @@
       &:-webkit-autofill:focus,
       &:-webkit-autofill:active {
         -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        -webkit-text-fill-color: $darkBlue;
       }
   
       //override placeholder styling
       &::placeholder {
         font-size: x-large;
-        color: $lightBlue;
+        color: $darkBlue;
         position: absolute;
         bottom: 10px;
         display: inline-block;
@@ -56,13 +60,13 @@
     }
 
     small {
-      color: $accentYellow;
+      color: $darkYellow;
       font-weight: bold;
       font-size: medium;
     }
     
       .empty-field {
-        border-bottom: 2px solid $accentYellow;
+        border-bottom: 2px solid $darkYellow;
       }
   }
 
@@ -72,11 +76,11 @@
     width: fit-content;
     font-size: x-large;
     background: transparent;
-    border: 3px solid $lightBlue;
+    border: 3px solid $darkBlue;
     padding: 0.7rem 2rem;
     border-radius: 2rem;
     margin-top: 1rem;
-    color: $lightBlue;
+    color: $darkBlue;
     font-family: 'Quicksand';
     cursor: pointer;
   }

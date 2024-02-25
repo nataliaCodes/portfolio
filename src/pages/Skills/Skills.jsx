@@ -59,7 +59,7 @@ export default function Skills() {
   });
 
   return (
-    <div className="page-content flex-column">
+    <div className="page-content flex-column skills">
       <p className='xx-large-text profile'>Though my main experience is on the front-end, I can build full-stack PERN / PEAN single-page apps.</p>
       <p className='xx-large-text profile'>Building, styling, animating, whatever the need I have the solution for it. Some of the tools I use:</p>
       <div className='flex-row wrap full-width'>
