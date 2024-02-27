@@ -19,20 +19,23 @@ export default function Navbar() {
   });
 
   //open and close hamburger menu
-  const [isActive, setIsActive] = useState(false);     //menu is open or closed
+  const [isActive, setIsActive] = useState(false);      //menu is expanded or collapsed
   const [firstClick, setFirstClick] = useState(true);   //prevent animation from happening on first page load
   const menuClicked = (e) => {
-    // console.log('e :', e);
-    //checks that the right element is clicked
+  console.log('e :', e);
+    //if click is on hamburger menu or x
     if (e.target.id && e.target.id === 'check') {
       setFirstClick(false);
-      console.log('target:', e.target.className);
-      console.log('e :', e);
       if (e.target.className === 'collapsed') {
         setIsActive(true);
       } else {
         setIsActive(false);
       }
+    }
+
+    //if click is on any of the menu links
+    if (e.target.outerHTML.includes('<li>')) {
+      setIsActive(false);
     }
   };
 
@@ -65,7 +68,7 @@ export default function Navbar() {
         </ul>
         :
         <div>
-          <div className="ham-menu">
+          <div className={`ham-menu ${isActive ? 'expanded' : 'collapsed'}`}>
             <div className={`ham-bckgrd ${!firstClick ? (isActive ? 'expanded' : 'collapsed') : 'not-clicked'}`}></div>
             <label className="bar" htmlFor="check">
               <input type="checkbox" id="check" className={`${isActive ? 'expanded' : 'collapsed'}`}></input>

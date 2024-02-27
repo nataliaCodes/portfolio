@@ -72,32 +72,28 @@ nav {
         bottom: 0;
       }
     }
+  }
 
-    input[type] {
-      &:checked {
-        ~ {
-          span.top {
-            transform: rotate(45deg);
-            transform-origin: top center;
-            width: 1.7rem;
-            left: 4.04rem;
-            top: 1.5rem;
-          }
+  .ham-menu.expanded {
+    span.top {
+      transform: rotate(45deg);
+      transform-origin: top center;
+      width: 1.7rem;
+      left: .5rem;
+      top: 1rem;
+    }
 
-          span.bottom {
-            transform: rotate(-45deg);
-            transform-origin: top center;
-            width: 1.7rem;
-            top: 1.5rem;
-            left: 3.8rem;
-          }
+    span.bottom {
+      transform: rotate(-45deg);
+      transform-origin: top center;
+      width: 1.7rem;
+      top: 1rem;
+      left: .25rem;
+    }
 
-          span.middle {
-            transform: translateX(-20px);
-            opacity: 0;
-          }
-        }
-      }
+    span.middle {
+      transform: translateX(-20px);
+      opacity: 0;
     }
   }
 
@@ -106,9 +102,17 @@ nav {
     z-index: 7;
     text-align: right;
     top: 5rem;
-    right: 1rem;
+    right: 2rem;
     font-family: 'Tilt Neon';
     font-size: xx-large;
+
+    li {
+      padding-bottom: 1rem;
+
+      &:hover {
+        color: $darkYellow;
+      }
+    }
   }
 }
 
@@ -120,7 +124,7 @@ nav {
   height: 6rem;
   background-color: $lightYellow;
   display: none;
-  z-index: 2;
+  z-index: 3;
   
   &.expanded {
     animation: openMenu 1s forwards;
