@@ -4,16 +4,17 @@
 
   .intro-text {
     color: $darkBlue;
+    z-index: 1;
   
     .changing-text {
       height: 3.7rem;
       color: $mediumBlue;
       overflow: hidden;
-
+      
       ul {
         margin: 0;
         padding: 0;
-        animation: change 15s infinite;
+        animation: scroll 15s infinite;
 
         li {
           height: 3.7rem;

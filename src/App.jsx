@@ -34,13 +34,9 @@ export default function App() {
   //   }
   // };
 
-  const width = window.innerWidth;
-  console.log('width :', width);
-
   return (
     <div className="App flex-column">
       <div className='menu-bckgrd'></div>
-      <div className='hamburger-bckgrd'></div>
       <Header />
       <div className='main-content flex-row'>
         <Routes>

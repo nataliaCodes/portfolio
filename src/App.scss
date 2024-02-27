@@ -119,17 +119,6 @@ ul {
     opacity: 30%;
   }
 
-  .hamburger-bckgrd {
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 6rem;
-    height: 6rem;
-    background-color: $darkYellow;
-    opacity: 30%;
-    display: none;
-  }
-
   .footer-bckgrd {
     position: absolute;
     bottom: -14rem;
@@ -192,18 +181,26 @@ ul {
       height: 23rem;
     }
   }
+
 }
 
 // large mobile
 @media only screen and (max-width: 810px) {
+  body {
+    overflow: hidden;
+  }
+
   .App {
+    height: 100vh;
+    margin-top: 0;
+
     .menu-bckgrd {
       display: none;
     }
-  
-    .hamburger-bckgrd {
-      display: block;
-    }
+  }
+
+  .ham-bckgrd {
+    display: block;
   }
   
   header {
