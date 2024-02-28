@@ -107,13 +107,13 @@ ul {
   height: 95vh;
   margin: auto;
   margin-top: 2vh;
-  // overflow: hidden;
+  overflow: hidden;
 
   .menu-bckgrd {
     position: absolute;
     top: 0;
     right: 0;
-    height: 10rem;
+    height: 9rem;
     width: 40rem;
     background-color: $darkYellow;
     opacity: 30%;
@@ -136,21 +136,44 @@ ul {
 
     .page-content {
       width: 100%;
+
+      &.skills {
+        font-size: .7rem;
+        text-align: center;
+      }
     }
   }
 }
 
 // average desktop
 @media only screen and (max-width: 1440px) {
-  .intro-text {
-    font-size: 3rem;
+  .App {
+    .intro-text {
+      font-size: 3rem;
+    }
+
+    .page-content {
+      &.skills {
+        font-size: .4rem;
+        padding: 0 2rem;
+      }
+    }
   }
 }
 
 // average laptop
 @media only screen and (max-width: 1366px) {
-  .intro-text {
-    font-size: 2.5rem;
+  .App {
+    .intro-text {
+      font-size: 2.5rem;
+    }
+
+    .page-content {
+      &.skills {
+        font-size: .3rem;
+        padding: 0 2rem;
+      }
+    }
   }
 }
 
@@ -172,7 +195,7 @@ ul {
     }
   
     .menu-bckgrd {
-      width: 28rem;
+      width: 30rem;
       height: 8rem;
     }
   
@@ -180,11 +203,33 @@ ul {
       width: 23rem;
       height: 23rem;
     }
+
+    .page-content {
+      &.about {
+        font-size: 1.7rem;
+        padding: 0 4rem;
+      }
+
+      &.skills {
+        font-size: 1rem;
+        padding: 0 2rem;
+
+        .logos {
+          img {
+            height: 3rem;
+          }
+          
+          p {
+            font-size: .8rem;
+          }
+        }
+      }
+    }
   }
 
 }
 
-// large mobile
+// mobile
 @media only screen and (max-width: 810px) {
   body {
     overflow: hidden;
@@ -197,28 +242,33 @@ ul {
     .menu-bckgrd {
       display: none;
     }
-  }
-
-  .ham-bckgrd {
-    display: block;
-  }
+    
+    header {
+      .logo {
+        font-size: 2.5rem;
+      }
   
-  header {
-    .logo {
-      font-size: 2.5rem;
+      .menu {
+        font-size: 1.5rem;
+      }
+          
+      .ham-bckgrd {
+        display: block;
+      }
     }
-
-    .menu {
-      font-size: 1.5rem;
-    }
-  }
+    
+    .page-content {
+      flex-direction: column-reverse;
   
-  .page-content {
-    flex-direction: column-reverse;
-
-    .intro-text {
-      font-size: 2.5rem;
-      text-align: center;
+      .intro-text {
+        font-size: 2.5rem;
+        text-align: center;
+      }
+  
+      &.about {
+        font-size: 1.6rem;
+        padding: 0 3rem;
+      }
     }
   }
 }

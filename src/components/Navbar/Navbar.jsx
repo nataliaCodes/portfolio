@@ -22,7 +22,6 @@ export default function Navbar() {
   const [isActive, setIsActive] = useState(false);      //menu is expanded or collapsed
   const [firstClick, setFirstClick] = useState(true);   //prevent animation from happening on first page load
   const menuClicked = (e) => {
-  console.log('e :', e);
     //if click is on hamburger menu or x
     if (e.target.id && e.target.id === 'check') {
       setFirstClick(false);
