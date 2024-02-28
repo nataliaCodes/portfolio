@@ -1,9 +1,16 @@
 div.skills {
   justify-content: center;
+  margin-top: 3rem;
 
   .profile {
     margin: .5rem 0;
     font-weight: 500;
+    font-size: 2rem;
+  }
+
+  .profile-small {
+    font-size: 1.5rem;
+    margin: .5rem 0;
   }
 
   span.logos {

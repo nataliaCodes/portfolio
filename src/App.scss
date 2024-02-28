@@ -13,6 +13,10 @@
 @import './components/CarouselIndicators/CarouselIndicators.scss';
 @import './pages/404/404.scss';
 
+body {
+  overflow: hidden;
+}
+
 a,
 a:visited {
   text-decoration: none;
@@ -86,6 +90,7 @@ ul {
 .dark-bckgrd {
   background-color: $darkBlue;
 }
+
 //
 
 .hidden {
@@ -131,8 +136,10 @@ ul {
   }
 
   .main-content {
+    justify-content: center;
+
     width: 100%;
-    height: 86%;
+    height: 80%;
 
     .page-content {
       width: 100%;
@@ -140,6 +147,10 @@ ul {
       &.skills {
         font-size: .7rem;
         text-align: center;
+
+        .libraries {
+          flex-wrap: wrap;
+        }
       }
     }
   }
@@ -158,6 +169,22 @@ ul {
         padding: 0 2rem;
       }
     }
+
+    .carousel-item {
+      img {
+        width: 60%;
+      }
+
+      .slide-text {
+        .x-large-text {
+          font-size: 1.3rem;
+        }
+
+        .large-text {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }
 
@@ -174,6 +201,22 @@ ul {
         padding: 0 2rem;
       }
     }
+
+    .carousel-item {
+      img {
+        width: 50%;
+      }
+
+      .slide-text {
+        .x-large-text {
+          font-size: 1.3rem;
+        }
+
+        .large-text {
+          font-size: 1rem;
+        }
+      }
+    }
   }
 }
 
@@ -184,43 +227,82 @@ ul {
       .logo {
         font-size: 2.5rem;
       }
-    
+
       .menu {
         font-size: 1.5rem;
       }
-    } 
-  
+    }
+
     .intro-text {
       font-size: 2.5rem;
     }
-  
+
     .menu-bckgrd {
       width: 30rem;
       height: 8rem;
     }
-  
+
     .footer-bckgrd {
       width: 23rem;
       height: 23rem;
     }
 
-    .page-content {
-      &.about {
-        font-size: 1.7rem;
-        padding: 0 4rem;
+    .main-content {
+      .page-content {
+        width: 90%;
+
+        &.about {
+          font-size: 1.7rem;
+          padding: 0 4rem;
+        }
+
+        &.skills {
+          font-size: 1rem;
+          padding: 0 2rem;
+
+          .logos {
+            img {
+              height: 3rem;
+            }
+
+            p {
+              font-size: .8rem;
+            }
+          }
+
+          .profile {
+            font-size: 1.5rem;
+          }
+
+          .profile-small {
+            font-size: 1.2rem;
+          }
+        }
+
+        &.contact .contact-container{
+          width: 70%;
+        }
       }
 
-      &.skills {
-        font-size: 1rem;
-        padding: 0 2rem;
+      .container .carousel {
+        width: 95%;
 
-        .logos {
+        .carousel-item {
+          flex-direction: column;
+          justify-content: center;
+
           img {
-            height: 3rem;
+            width: 50%;
           }
-          
-          p {
-            font-size: .8rem;
+
+          .slide-text {
+            width: 95%;
+          }
+
+          &.reverse {
+            img {
+              align-self: center;
+            }
           }
         }
       }
@@ -231,10 +313,6 @@ ul {
 
 // mobile
 @media only screen and (max-width: 810px) {
-  body {
-    overflow: hidden;
-  }
-
   .App {
     height: 100vh;
     margin-top: 0;
@@ -242,32 +320,53 @@ ul {
     .menu-bckgrd {
       display: none;
     }
-    
+
     header {
       .logo {
         font-size: 2.5rem;
       }
-  
+
       .menu {
         font-size: 1.5rem;
       }
-          
+
       .ham-bckgrd {
         display: block;
       }
     }
-    
-    .page-content {
-      flex-direction: column-reverse;
-  
-      .intro-text {
-        font-size: 2.5rem;
-        text-align: center;
-      }
-  
-      &.about {
-        font-size: 1.6rem;
-        padding: 0 3rem;
+
+    .main-content {
+      .page-content {
+        flex-direction: column-reverse;
+
+        .intro-text {
+          font-size: 2.5rem;
+          text-align: center;
+        }
+
+        &.about {
+          font-size: 1.6rem;
+          padding: 0 3rem;
+        }
+
+        &.skills {
+          flex-direction: column;
+          margin-top: 1rem;
+
+          .profile {
+            font-size: 1.5rem;
+          }
+        }
+
+        .carousel-item {
+          img {
+            display: none;
+          }
+
+          .slide-text {
+            width: 90%;
+          }
+        }
       }
     }
   }

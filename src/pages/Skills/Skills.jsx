@@ -60,8 +60,8 @@ export default function Skills() {
 
   return (
     <div className="page-content flex-column skills">
-      <p className='xx-large-text profile'>Though my main experience is on the front-end, I can build full-stack PERN / PEAN single-page apps.</p>
-      <p className='xx-large-text profile'>Building, styling, animating, whatever the need I have the solution for it. Some of the tools I use:</p>
+      <p className='profile'>Though my main experience is on the front-end, I can build full-stack PERN / PEAN single-page apps.</p>
+      <p className='profile'>Building, styling, animating, whatever the need I have the solution for it. Some of the tools I use:</p>
       <div className='flex-row wrap full-width'>
         <div className='flex-row justify-center full-width languages'>{langContent}</div>
       </div>
@@ -71,8 +71,8 @@ export default function Skills() {
       <div className='flex-row wrap full-width'>
         <div className='flex-row justify-center full-width test'>{testContent}</div>
       </div>
-      <p className='x-large-text profile'>I am always up for a challenge and curious to discover new technologies, so the list above will keep growing.</p>
-      <p className='x-large-text profile'>Head over to my <a href='https://www.linkedin.com/in/nmartian/' target='_blank' rel='noreferrer' className='underline'>LinkedIn profile</a> to get a history of my professional experience.</p>
+      <p className='profile-small'>I am always up for a challenge and curious to discover new technologies, so the list above will keep growing.</p>
+      <p className='profile-small'>Head over to my <a href='https://www.linkedin.com/in/nmartian/' target='_blank' rel='noreferrer' className='underline'>LinkedIn profile</a> to get a history of my professional experience.</p>
     </div>
   );
 }
