@@ -48,7 +48,7 @@ export default function Navbar() {
     <nav>
       {isWide ?
         <ul className="menu flex-row">
-          {route !== ('/portfolio' || '/portfolio/') &&
+          {!route.includes('portfolio') &&
             (<NavLink exact="true" to="/portfolio">
               <li>Home</li>
             </NavLink>)
