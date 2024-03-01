@@ -8,9 +8,9 @@ export default function Navbar() {
   const route = location.pathname;
 
   //update state when resizing window
-  const [isWide, setIsWide] = useState(window.innerWidth > 810);
+  const [isWide, setIsWide] = useState(window.innerWidth > 920);
   const updateMedia = () => {
-    setIsWide(window.innerWidth > 810);
+    setIsWide(window.innerWidth > 920);
   };
 
   useEffect(() => {
@@ -32,7 +32,7 @@ export default function Navbar() {
       }
     }
 
-    //if click is on any of the menu links
+    //if click is on any of the hamburger menu links
     if (e.target.outerHTML.includes('<li>')) {
       setIsActive(false);
     }
@@ -54,19 +54,23 @@ export default function Navbar() {
           }
           <NavLink exact="true" to="/about">
             <li>About</li>
+            <div className="active-link"></div>
           </NavLink>
           <NavLink exact="true" to="/skills">
             <li>Skills</li>
+            <div className="active-link"></div>
           </NavLink>
           <NavLink exact="true" to="/projects">
             <li>Projects</li>
+            <div className="active-link"></div>
           </NavLink>
           <NavLink exact="true" to="/contact">
             <li>Contact</li>
+            <div className="active-link"></div>
           </NavLink>
         </ul>
         :
-        <div>
+        <div className="hamburger-menu">
           <div className={`ham-menu ${isActive ? 'expanded' : 'collapsed'}`}>
             <div className={`ham-bckgrd ${!firstClick ? (isActive ? 'expanded' : 'collapsed') : 'not-clicked'}`}></div>
             <label className="bar" htmlFor="check">

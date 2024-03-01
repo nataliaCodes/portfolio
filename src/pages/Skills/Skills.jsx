@@ -62,6 +62,11 @@ export default function Skills() {
     <div className="page-content flex-column skills">
       <p className='profile'>Though my main experience is on the front-end, I can build full-stack PERN / PEAN single-page apps.</p>
       <p className='profile'>Building, styling, animating, whatever the need I have the solution for it. Some of the tools I use:</p>
+      <div className='flex-row wrap full-width simple-list'>
+        <p><span>Languages:&nbsp;</span>JavaScript, TypeScript, SQL, HTML5, CSS3</p>
+        <p><span>Libraries/Frameworks:&nbsp;</span>Angular, React, NodeJS, Express, EJS, PrimeNG, Material-UI, Bootstrap, SASS, PostgreSQL</p>
+        <p><span>Testing frameworks:&nbsp;</span>Mocha&Chai, Storybook, Jest, Cypress, Jasmine, ESlint</p>
+      </div>
       <div className='flex-row wrap full-width'>
         <div className='flex-row justify-center full-width languages'>{langContent}</div>
       </div>

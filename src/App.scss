@@ -151,6 +151,10 @@ ul {
         .libraries {
           flex-wrap: wrap;
         }
+
+        .simple-list {
+          display: none;
+        }
       }
     }
   }
@@ -279,7 +283,7 @@ ul {
           }
         }
 
-        &.contact .contact-container{
+        &.contact .contact-container {
           width: 70%;
         }
       }
@@ -308,7 +312,29 @@ ul {
       }
     }
   }
+}
 
+//mobile mid point
+@media only screen and (max-width: 920px) {
+  .App {
+    .menu-bckgrd {
+      display: none;
+    }
+
+    header {
+      .logo {
+        font-size: 3rem;
+      }
+
+      .menu {
+        font-size: 1.8rem;
+      }
+
+      .ham-bckgrd {
+        display: block;
+      }
+    }
+  }
 }
 
 // mobile
@@ -351,11 +377,33 @@ ul {
 
         &.skills {
           flex-direction: column;
-          margin-top: 1rem;
+
+          text-align: left;
+          margin-top: 1.5rem;
+
+          .languages,
+          .libraries,
+          .test {
+            display: none;
+          }
 
           .profile {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
           }
+
+          .simple-list {
+            display: block;
+            font-size: 1.2rem;
+
+            p {
+              margin: .2rem 0;
+            }
+
+            span {
+              font-weight: bold;
+            }
+          }
+
         }
 
         .carousel-item {
@@ -367,6 +415,174 @@ ul {
             width: 90%;
           }
         }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 540px) {
+  .App {
+    .main-content {
+      .page-content {
+        width: 90%;
+
+        &.about {
+          font-size: 1.4rem;
+        }
+
+        &.contact .contact-container {
+          width: 60%;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .App {
+    .menu-bckgrd {
+      height: 7rem;
+    }
+
+    header {
+      .logo-container {
+        padding: .5rem 0 0 .5rem;
+      }
+
+      .logo {
+        font-size: 2rem;
+      }
+
+      nav {
+        padding-top: .5rem;
+
+        .ham-bckgrd.expanded {
+          right: 3rem;
+        }
+      }
+    }
+
+    .main-content {
+      .page-content {
+        width: 90%;
+
+        &.about {
+          font-size: 1.3rem;
+        }
+
+        &.skills {
+          text-align: left;
+          margin-top: 1.5rem;
+
+          .languages,
+          .libraries,
+          .test {
+            display: none;
+          }
+
+          .profile {
+            font-size: 1.2rem;
+          }
+
+          .simple-list {
+            font-size: 1.2rem;
+
+            p {
+              margin: .2rem 0;
+            }
+
+            span {
+              font-weight: bold;
+            }
+          }
+        }
+
+        &.contact .contact-container {
+          width: 50%;
+        }
+      }
+    }
+
+    footer {
+      padding: 0 0 .5rem .5rem;
+    }
+  }
+}
+
+@media only screen and (max-height: 800px) {
+  .App {
+    .menu-bckgrd {
+      height: 7rem;
+    }
+
+    nav .ham-bckgrd {
+      height: 5rem;
+    }
+
+    .main-content {
+      .container .carousel .carousel-item {
+        img {
+          width: 35%;
+        }
+
+        .slide-text {
+          h2 {
+            margin: 0 0 .5rem 0;
+          }
+
+          .x-large-text {
+            font-size: 1.3rem;
+            margin: .2rem 0;
+          }
+
+          .large-text {
+            font-size: 1rem;
+            margin: .2rem 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-height: 600px) {
+  .App {
+    .menu-bckgrd {
+      height: 5rem;
+    }
+
+    nav .ham-bckgrd {
+      height: 5rem;
+    }
+
+    .main-content {
+      .page-content.skills {
+        font-size: .7rem;
+        text-align: left;
+        margin-top: 1.5rem;
+
+        .languages,
+        .libraries,
+        .test {
+          display: none;
+        }
+
+        .simple-list {
+          display: block;
+          font-size: 1.5rem;
+
+          p {
+            margin: .2rem 0;
+          }
+
+          span {
+            font-weight: bold;
+          }
+        }
+      }
+
+      .container .carousel .carousel-indicators {
+        bottom: 10vh;
       }
     }
   }

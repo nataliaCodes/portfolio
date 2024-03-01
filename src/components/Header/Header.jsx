@@ -7,7 +7,7 @@ export default function Header(props) {
 
   return (
     <header className="bold" >
-      <div>
+      <div className="logo-container">
         <FontAwesomeIcon icon={faChevronRight} />
         <span className='blinking'>_</span>
         <NavLink to="/portfolio" className="logo">
