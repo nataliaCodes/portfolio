@@ -6,6 +6,7 @@ export default function Navbar() {
   //extract current route
   const location = useLocation();
   const route = location.pathname;
+  console.log('route :', route);
 
   //update state when resizing window
   const [isWide, setIsWide] = useState(window.innerWidth > 920);
@@ -47,7 +48,7 @@ export default function Navbar() {
     <nav>
       {isWide ?
         <ul className="menu flex-row">
-          {route !== '/portfolio' &&
+          {route !== ('/portfolio' || '/portfolio/') &&
             (<NavLink exact="true" to="/portfolio">
               <li>Home</li>
             </NavLink>)
